@@ -3,9 +3,9 @@
 exports[`Image Processor should process images from data-src 1`] = `
 <div>
   <mocked-img
-    alt="Frontity"
-    data-src="https://frontity.org/logo.png"
-    src="https://frontity.org/logo.png"
+    alt="Silea"
+    data-src="https://sileajs.com/logo.png"
+    src="https://sileajs.com/logo.png"
     width="500"
   />
 </div>
@@ -14,8 +14,8 @@ exports[`Image Processor should process images from data-src 1`] = `
 exports[`Image Processor should process images from src 1`] = `
 <div>
   <mocked-img
-    alt="Frontity"
-    src="https://frontity.org/logo.png"
+    alt="Silea"
+    src="https://sileajs.com/logo.png"
     width="500"
   />
 </div>

@@ -3,9 +3,9 @@
 exports[`Iframe Processor should process iframes from data-src 1`] = `
 <div>
   <mocked-iframe
-    data-src="https://frontity.org"
-    src="https://frontity.org"
-    title="Frontity"
+    data-src="https://sileajs.com"
+    src="https://sileajs.com"
+    title="Silea"
     width="500"
   />
 </div>
@@ -14,8 +14,8 @@ exports[`Iframe Processor should process iframes from data-src 1`] = `
 exports[`Iframe Processor should process iframes from src 1`] = `
 <div>
   <mocked-iframe
-    src="https://frontity.org"
-    title="Frontity"
+    src="https://sileajs.com"
+    title="Silea"
     width="500"
   />
 </div>

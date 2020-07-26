@@ -1,8 +1,8 @@
 {
-  "id": 1,
-  "count": 5,
-  "link": "https://test.frontity.org/category/cat-1/",
-  "slug": "cat-1",
-  "taxonomy": "category",
-  "parent": 0
+	"id": 1,
+	"count": 5,
+	"link": "https://test.sileajs.com/category/cat-1/",
+	"slug": "cat-1",
+	"taxonomy": "category",
+	"parent": 0
 }

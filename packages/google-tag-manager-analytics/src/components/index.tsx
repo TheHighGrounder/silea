@@ -1,17 +1,17 @@
 /* eslint-disable react/no-danger */
 import React from "react";
-import { Head, connect, css } from "frontity";
-import { Connect } from "frontity/types";
+import { Head, connect, css } from "silea";
+import { Connect } from "silea/types";
 import GoogleTagManagerAnalytics from "../../types";
 
 /**
  * Props used by {@link GtmCode}.
  */
 interface GtmCodeProps {
-  /**
-   * GTM container ID.
-   */
-  containerId: string;
+	/**
+	 * GTM container ID.
+	 */
+	containerId: string;
 }
 
 /**
@@ -27,28 +27,28 @@ interface GtmCodeProps {
  * @returns React element.
  */
 const GtmCode: React.FC<GtmCodeProps> = ({ containerId }) => (
-  <>
-    {/* Add the GTM script in the <head> */}
-    <Head>
-      <script
-        async
-        src={`https://www.googletagmanager.com/gtm.js?id=${containerId}`}
-      />
-    </Head>
-    {/* Add the GTM noscript in the <body> */}
-    <noscript>
-      <iframe
-        title={containerId}
-        src={`https://www.googletagmanager.com/ns.html?id=${containerId}`}
-        height="0"
-        width="0"
-        css={css`
-          display: none;
-          visibility: hidden;
-        `}
-      />
-    </noscript>
-  </>
+	<>
+		{/* Add the GTM script in the <head> */}
+		<Head>
+			<script
+				async
+				src={`https://www.googletagmanager.com/gtm.js?id=${containerId}`}
+			/>
+		</Head>
+		{/* Add the GTM noscript in the <body> */}
+		<noscript>
+			<iframe
+				title={containerId}
+				src={`https://www.googletagmanager.com/ns.html?id=${containerId}`}
+				height="0"
+				width="0"
+				css={css`
+					display: none;
+					visibility: hidden;
+				`}
+			/>
+		</noscript>
+	</>
 );
 
 /**
@@ -58,7 +58,7 @@ const GtmCode: React.FC<GtmCodeProps> = ({ containerId }) => (
  * in the state.
  *
  * @remarks
- * This component is automatically rendered by Frontity and it's not meant to be
+ * This component is automatically rendered by Silea and it's not meant to be
  * imported and used anywhere.
  *
  * @param props - Injected props by `connect`.
@@ -66,17 +66,17 @@ const GtmCode: React.FC<GtmCodeProps> = ({ containerId }) => (
  * @returns Root element.
  */
 export const Root: React.FC<Connect<GoogleTagManagerAnalytics>> = ({
-  state,
+	state,
 }) => {
-  const { containerId, containerIds } = state.googleTagManagerAnalytics;
-  const ids = containerIds || (containerId && [containerId]) || [];
-  return (
-    <>
-      {ids.map((id) => (
-        <GtmCode key={id} containerId={id} />
-      ))}
-    </>
-  );
+	const { containerId, containerIds } = state.googleTagManagerAnalytics;
+	const ids = containerIds || (containerId && [containerId]) || [];
+	return (
+		<>
+			{ids.map((id) => (
+				<GtmCode key={id} containerId={id} />
+			))}
+		</>
+	);
 };
 
 export default connect(Root);

@@ -1,10 +1,9 @@
 {
-  "name": "e2e-iframe",
-  "version": "1.0.2",
-  "private": true,
-  "description": "Package to do e2e testing of Frontity's Iframe component",
-  "dependencies": {
-    "@frontity/components": "^1.3.0",
-    "frontity": "^1.5.2"
-  }
+	"name": "e2e-iframe",
+	"version": "0.0.1",
+	"description": "Package to do e2e testing of Silea's Iframe component",
+	"dependencies": {
+		"@sileajs/components": "0.0.1",
+		"silea": "0.0.1"
+	}
 }

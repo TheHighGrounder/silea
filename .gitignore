@@ -9,7 +9,6 @@ build
 analyze
 .env
 .vscode
-**/package-lock.json
 .now
 e2e/**/*(failed).png
 coverage

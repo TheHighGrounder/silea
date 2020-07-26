@@ -1,29 +1,32 @@
 {
-  "name": "@frontity/analytics",
-  "version": "1.2.0",
-  "description": "Base types and actions to build analytics packages for Frontity",
-  "main": "src/index.ts",
-  "keywords": [
-    "frontity",
-    "frontity-analytics"
-  ],
-  "homepage": "https://frontity.org",
-  "license": "Apache-2.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/frontity/frontity.git"
-  },
-  "bugs": {
-    "url": "https://community.frontity.org"
-  },
-  "scripts": {
-    "test:ci": "../../node_modules/.bin/jest --passWithNoTests --ci --coverage",
-    "test": "../../node_modules/.bin/jest --watch",
-    "test:inspect": "node --inspect ../../node_modules/.bin/jest --watch --no-cache --runInBand"
-  },
-  "dependencies": {
-    "@frontity/source": "^1.2.2",
-    "@frontity/router": "^1.1.1",
-    "frontity": "^1.10.0"
-  }
+	"name": "@sileajs/analytics",
+	"version": "0.0.1",
+	"description": "Base types and actions to build analytics packages for Silea",
+	"main": "src/index.ts",
+	"keywords": [
+		"silea",
+		"silea-analytics"
+	],
+	"homepage": "https://sileajs.com",
+	"license": "SEE LICENSE IN LICENSE",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/SileaJS/silea.git"
+	},
+	"bugs": {
+		"url": "https://community.sileajs.com"
+	},
+	"scripts": {
+		"test:ci": "../../node_modules/.bin/jest --passWithNoTests --ci --coverage",
+		"test": "../../node_modules/.bin/jest --watch",
+		"test:inspect": "node --inspect ../../node_modules/.bin/jest --watch --no-cache --runInBand"
+	},
+	"dependencies": {
+		"@sileajs/router": "0.0.1",
+		"@sileajs/source": "0.0.1",
+		"silea": "0.0.1"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }

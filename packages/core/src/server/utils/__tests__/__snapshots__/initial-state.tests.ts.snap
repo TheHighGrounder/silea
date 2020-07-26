@@ -2,7 +2,7 @@
 
 exports[`initialState should return a valid initial state 1`] = `
 Object {
-  "frontity": Object {
+  "silea": Object {
     "debug": false,
     "initialLink": "/post",
     "menu1": Array [

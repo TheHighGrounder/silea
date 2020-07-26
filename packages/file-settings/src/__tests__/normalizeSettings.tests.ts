@@ -8,15 +8,15 @@ import expectedMulti from "./mocks/normalizeSettings/expectedMulti.json";
 jest.mock("../validateSettings");
 
 describe("normalizeSettings", () => {
-  test("should work when param `settings` is an object", () => {
-    const result = normalizeSettings(mockedMonoSettings);
-    expect(validateSettings.default).toHaveBeenCalled();
-    expect(result).toEqual(expectedMono);
-  });
+	test("should work when param `settings` is an object", () => {
+		const result = normalizeSettings(mockedMonoSettings);
+		expect(validateSettings.default).toHaveBeenCalled();
+		expect(result).toEqual(expectedMono);
+	});
 
-  test("should work when param `settings` is an array", () => {
-    const result = normalizeSettings(mockedMultiSettings);
-    expect(validateSettings.default).toHaveBeenCalled();
-    expect(result).toEqual(expectedMulti);
-  });
+	test("should work when param `settings` is an array", () => {
+		const result = normalizeSettings(mockedMultiSettings);
+		expect(validateSettings.default).toHaveBeenCalled();
+		expect(result).toEqual(expectedMulti);
+	});
 });

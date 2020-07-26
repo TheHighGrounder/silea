@@ -1,22 +1,25 @@
 {
-  "name": "@frontity/error",
-  "version": "0.1.1",
-  "description": "Frontity errors and warnings",
-  "keywords": [
-    "frontity"
-  ],
-  "homepage": "https://frontity.org",
-  "bugs": {
-    "url": "https://github.com/frontity/frontity/issues"
-  },
-  "license": "Apache-2.0",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/frontity/frontity.git"
-  },
-  "scripts": {
-    "test:ci": "../../node_modules/.bin/jest --ci --coverage",
-    "test": "../../node_modules/.bin/jest --watch",
-    "test:inspect": "node --inspect ../../node_modules/.bin/jest --watch --no-cache --runInBand"
-  }
+	"name": "@sileajs/error",
+	"version": "0.0.1",
+	"description": "Silea errors and warnings",
+	"keywords": [
+		"silea"
+	],
+	"homepage": "https://sileajs.com",
+	"bugs": {
+		"url": "https://github.com/SileaJS/silea/issues"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SileaJS/silea.git"
+	},
+	"scripts": {
+		"test:ci": "../../node_modules/.bin/jest --ci --coverage",
+		"test": "../../node_modules/.bin/jest --watch",
+		"test:inspect": "node --inspect ../../node_modules/.bin/jest --watch --no-cache --runInBand"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }

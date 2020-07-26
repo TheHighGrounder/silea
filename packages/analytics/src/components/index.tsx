@@ -1,6 +1,6 @@
 import React from "react";
-import { connect, Head } from "frontity";
-import { Connect } from "frontity/types";
+import { connect, Head } from "silea";
+import { Connect } from "silea/types";
 import { Packages } from "../../types";
 
 /**
@@ -10,7 +10,7 @@ import { Packages } from "../../types";
  * for the current link (i.e. `state.router.link`).
  *
  * @remarks
- * This component is automatically rendered by Frontity and it's not meant to be
+ * This component is automatically rendered by Silea and it's not meant to be
  * imported and used anywhere.
  *
  * @param props - Injected props by `connect`.
@@ -18,38 +18,38 @@ import { Packages } from "../../types";
  * @returns Root element.
  */
 const Root: React.FC<Connect<Packages>> = ({ state, actions }) => {
-  const { link } = state.router;
-  const { isReady } = state.source.get(link);
+	const { link } = state.router;
+	const { isReady } = state.source.get(link);
 
-  // Store if a pageview has been sent for this link.
-  const [isPageviewSent, setIsPageviewSent] = React.useState(false);
+	// Store if a pageview has been sent for this link.
+	const [isPageviewSent, setIsPageviewSent] = React.useState(false);
 
-  // Every time link changes, we reset the isPageviewSent value.
-  React.useEffect(() => {
-    setIsPageviewSent(false);
-  }, [link]);
+	// Every time link changes, we reset the isPageviewSent value.
+	React.useEffect(() => {
+		setIsPageviewSent(false);
+	}, [link]);
 
-  return (
-    <Head
-      /**
-       * This `titleTemplate` changes the title while
-       * `data.isReady` is `false`. This ensures a title change
-       * when `data.isReady` becomes `true` but the title hasn't changed.
-       */
-      titleTemplate={!isReady ? "%s " : ""}
-      onChangeClientState={({ title }) => {
-        if (isReady && !isPageviewSent) {
-          // Send pageview.
-          actions.analytics.pageview({
-            link: state.router.link,
-            title,
-          });
-          // Mark pageview as sent.
-          setIsPageviewSent(true);
-        }
-      }}
-    />
-  );
+	return (
+		<Head
+			/**
+			 * This `titleTemplate` changes the title while
+			 * `data.isReady` is `false`. This ensures a title change
+			 * when `data.isReady` becomes `true` but the title hasn't changed.
+			 */
+			titleTemplate={!isReady ? "%s " : ""}
+			onChangeClientState={({ title }) => {
+				if (isReady && !isPageviewSent) {
+					// Send pageview.
+					actions.analytics.pageview({
+						link: state.router.link,
+						title,
+					});
+					// Mark pageview as sent.
+					setIsPageviewSent(true);
+				}
+			}}
+		/>
+	);
 };
 
 export default connect(Root);

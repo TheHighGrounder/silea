@@ -1,10 +1,9 @@
 {
-  "name": "e2e-html2react",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Package to do e2e testing of Frontity's Html2React package",
-  "dependencies": {
-    "frontity": "^1.5.0",
-    "@frontity/html2react": "^1.2.0"
-  }
+	"name": "e2e-html2react",
+	"version": "0.0.1",
+	"description": "Package to do e2e testing of Silea's Html2React package",
+	"dependencies": {
+		"silea": "0.0.1",
+		"@sileajs/html2react": "0.0.1"
+	}
 }

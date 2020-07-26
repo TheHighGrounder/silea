@@ -1,26 +1,29 @@
 {
-  "name": "@frontity/source",
-  "version": "1.2.2",
-  "description": "Types for the Frontity source namespace",
-  "main": "src/index.ts",
-  "keywords": [
-    "frontity",
-    "frontity-source"
-  ],
-  "homepage": "https://frontity.org",
-  "license": "Apache-2.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/frontity/frontity.git"
-  },
-  "bugs": {
-    "url": "https://community.frontity.org"
-  },
-  "scripts": {
-    "test:ci": "../../node_modules/.bin/jest --ci --coverage",
-    "test": "../../node_modules/.bin/jest --clearCache && ../../node_modules/.bin/jest"
-  },
-  "dependencies": {
-    "frontity": "^1.9.0"
-  }
+	"name": "@sileajs/source",
+	"version": "0.0.1",
+	"description": "Types for the Silea source namespace",
+	"main": "src/index.ts",
+	"keywords": [
+		"silea",
+		"silea-source"
+	],
+	"homepage": "https://sileajs.com",
+	"license": "SEE LICENSE IN LICENSE",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/SileaJS/silea.git"
+	},
+	"bugs": {
+		"url": "https://community.sileajs.com"
+	},
+	"scripts": {
+		"test:ci": "../../node_modules/.bin/jest --ci --coverage",
+		"test": "../../node_modules/.bin/jest --clearCache && ../../node_modules/.bin/jest"
+	},
+	"dependencies": {
+		"silea": "0.0.1"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }

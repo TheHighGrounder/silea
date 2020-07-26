@@ -1,16 +1,16 @@
 [
-  {
-    "name": "settings-with-short-match",
-    "mode": "default",
-    "state": {},
-    "match": ["https://frontity.org.*"],
-    "packages": []
-  },
-  {
-    "name": "settings-with-large-match",
-    "mode": "default",
-    "state": {},
-    "match": ["https://frontity.org/page/.*"],
-    "packages": []
-  }
+	{
+		"name": "settings-with-short-match",
+		"mode": "default",
+		"state": {},
+		"match": ["https://sileajs.com.*"],
+		"packages": []
+	},
+	{
+		"name": "settings-with-large-match",
+		"mode": "default",
+		"state": {},
+		"match": ["https://sileajs.com/page/.*"],
+		"packages": []
+	}
 ]

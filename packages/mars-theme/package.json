@@ -1,23 +1,26 @@
 {
-  "name": "@frontity/mars-theme",
-  "version": "1.4.3",
-  "description": "A starter theme for Frontity",
-  "keywords": [
-    "frontity",
-    "frontity-theme"
-  ],
-  "homepage": "https://frontity.org",
-  "license": "Apache-2.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/frontity/frontity.git"
-  },
-  "bugs": {
-    "url": "https://community.frontity.org"
-  },
-  "dependencies": {
-    "@frontity/components": "^1.3.3",
-    "@frontity/html2react": "^1.3.4",
-    "frontity": "^1.9.0"
-  }
+	"name": "@sileajs/mars-theme",
+	"version": "0.0.1",
+	"description": "A starter theme for Silea",
+	"keywords": [
+		"silea",
+		"silea-theme"
+	],
+	"homepage": "https://sileajs.com",
+	"license": "SEE LICENSE IN LICENSE",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/SileaJS/silea.git"
+	},
+	"bugs": {
+		"url": "https://community.sileajs.com"
+	},
+	"dependencies": {
+		"@sileajs/components": "0.0.1",
+		"@sileajs/html2react": "0.0.1",
+		"silea": "0.0.1"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }

@@ -1,34 +1,37 @@
 {
-  "name": "@frontity/file-settings",
-  "version": "1.1.6",
-  "description": "A settings package for Frontity that uses a frontity.settings.js file.",
-  "homepage": "https://github.com/frontity/frontity",
-  "license": "Apache-2.0",
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
-  "keywords": [
-    "frontity",
-    "frontity-settings"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/frontity/frontity.git"
-  },
-  "bugs": {
-    "url": "https://github.com/frontity/frontity/issues"
-  },
-  "scripts": {
-    "test:ci": "../../node_modules/.bin/jest --ci --coverage",
-    "test": "../../node_modules/.bin/jest --watch",
-    "test:inspect": "node --inspect ../../node_modules/.bin/jest --watch --no-cache --runInBand",
-    "build": "tsc --project ./tsconfig.build.json",
-    "prepublish": "npm run build"
-  },
-  "dependencies": {
-    "ramda": "^0.26.1"
-  },
-  "devDependencies": {
-    "@frontity/types": "^1.4.1",
-    "@types/ramda": "0.26.33"
-  }
+	"name": "@sileajs/file-settings",
+	"version": "0.0.1",
+	"description": "A settings package for Silea that uses a silea.settings.js file.",
+	"homepage": "https://github.com/SileaJS/silea",
+	"license": "SEE LICENSE IN LICENSE",
+	"main": "dist/src/index.js",
+	"types": "dist/src/index.d.ts",
+	"keywords": [
+		"silea",
+		"silea-settings"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/SileaJS/silea.git"
+	},
+	"bugs": {
+		"url": "https://github.com/SileaJS/silea/issues"
+	},
+	"scripts": {
+		"test:ci": "../../node_modules/.bin/jest --ci --coverage",
+		"test": "../../node_modules/.bin/jest --watch",
+		"test:inspect": "node --inspect ../../node_modules/.bin/jest --watch --no-cache --runInBand",
+		"build": "tsc --project ./tsconfig.build.json",
+		"prepublish": "npm run build"
+	},
+	"dependencies": {
+		"ramda": "0.27.0"
+	},
+	"devDependencies": {
+		"@sileajs/types": "0.0.1",
+		"@types/ramda": "0.27.11"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }

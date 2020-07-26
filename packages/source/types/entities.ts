@@ -2,12 +2,12 @@
  * Define the base structure of entities.
  */
 export interface BaseEntity {
-  id: number;
-  slug: string;
-  link: string;
-  description?: string | { rendered: string };
-  meta?: unknown;
-  _links?: unknown;
+	id: number;
+	slug: string;
+	link: string;
+	description?: string | { rendered: string };
+	meta?: unknown;
+	_links?: unknown;
 }
 
 /**
@@ -19,24 +19,24 @@ export interface BaseEntity {
  * @extends BaseEntity
  */
 export interface BasePostEntity extends BaseEntity {
-  type: string;
-  author?: number;
-  date?: string;
-  date_gmt?: string;
-  modified?: string;
-  modified_gmt?: string;
-  title?: {
-    rendered?: string;
-  };
-  guid?: {
-    rendered?: string;
-  };
-  status?: "publish" | "future" | "draft" | "pending" | "private" | "inherit";
-  comment_status?: "open" | "closed";
-  ping_status?: "open" | "closed";
-  custom_fields?: unknown;
-  template?: string;
-  _embedded?: unknown;
+	type: string;
+	author?: number;
+	date?: string;
+	date_gmt?: string;
+	modified?: string;
+	modified_gmt?: string;
+	title?: {
+		rendered?: string;
+	};
+	guid?: {
+		rendered?: string;
+	};
+	status?: "publish" | "future" | "draft" | "pending" | "private" | "inherit";
+	comment_status?: "open" | "closed";
+	ping_status?: "open" | "closed";
+	custom_fields?: unknown;
+	template?: string;
+	_embedded?: unknown;
 }
 
 /**
@@ -44,13 +44,13 @@ export interface BasePostEntity extends BaseEntity {
  * @extends BaseEntity
  */
 export interface AuthorEntity extends BaseEntity {
-  name: string;
-  url?: string;
-  avatar_urls?: {
-    "24"?: string;
-    "48"?: string;
-    "96"?: string;
-  };
+	name: string;
+	url?: string;
+	avatar_urls?: {
+		"24"?: string;
+		"48"?: string;
+		"96"?: string;
+	};
 }
 
 /**
@@ -58,10 +58,10 @@ export interface AuthorEntity extends BaseEntity {
  * @extends BaseEntity
  */
 export interface TaxonomyEntity extends BaseEntity {
-  taxonomy: string;
-  name?: string;
-  parent?: number;
-  count?: number;
+	taxonomy: string;
+	name?: string;
+	parent?: number;
+	count?: number;
 }
 
 /**
@@ -69,13 +69,13 @@ export interface TaxonomyEntity extends BaseEntity {
  * @extends BasePostEntity
  */
 export interface AttachmentEntity extends BasePostEntity {
-  source_url?: string;
-  caption?: string | { rendered: string };
-  alt_text?: string;
-  post?: number;
-  media_details?: unknown;
-  media_type?: string;
-  mime_type?: string;
+	source_url?: string;
+	caption?: string | { rendered: string };
+	alt_text?: string;
+	post?: number;
+	media_details?: unknown;
+	media_type?: string;
+	mime_type?: string;
 }
 
 /**
@@ -83,20 +83,20 @@ export interface AttachmentEntity extends BasePostEntity {
  * @extends BasePostEntity
  */
 export interface PostEntity extends BasePostEntity {
-  categories?: number[];
-  tags?: number[];
-  featured_media?: number;
-  excerpt?: {
-    protected?: false;
-    rendered?: string;
-  };
-  content?: {
-    protected?: boolean;
-    rendered?: string;
-  };
-  content_media?: number[];
-  format?: string;
-  sticky?: boolean;
+	categories?: number[];
+	tags?: number[];
+	featured_media?: number;
+	excerpt?: {
+		protected?: false;
+		rendered?: string;
+	};
+	content?: {
+		protected?: boolean;
+		rendered?: string;
+	};
+	content_media?: number[];
+	format?: string;
+	sticky?: boolean;
 }
 
 /**
@@ -104,12 +104,12 @@ export interface PostEntity extends BasePostEntity {
  * Type entities are those that describe the entity types.
  */
 export interface BaseType {
-  name: string;
-  slug: string;
-  description: string;
-  hierarchical: boolean;
-  rest_base: string;
-  _links?: unknown;
+	name: string;
+	slug: string;
+	description: string;
+	hierarchical: boolean;
+	rest_base: string;
+	_links?: unknown;
 }
 
 /**
@@ -118,7 +118,7 @@ export interface BaseType {
  * @extends BaseType
  */
 export interface PostType extends BaseType {
-  taxonomies: string[];
+	taxonomies: string[];
 }
 
 /**
@@ -127,5 +127,5 @@ export interface PostType extends BaseType {
  * @extends BaseType
  */
 export interface TaxonomyType extends BaseType {
-  types: string[];
+	types: string[];
 }

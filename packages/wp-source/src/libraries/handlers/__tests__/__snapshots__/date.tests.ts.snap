@@ -2,7 +2,7 @@
 
 exports[`date An invalid day AND month should return a 404 1`] = `
 Object {
-  "api": "https://test.frontity.org/wp-json",
+  "api": "https://test.sileajs.com/wp-json",
   "attachment": Object {},
   "author": Object {},
   "authorBase": "",
@@ -38,7 +38,7 @@ Object {
 
 exports[`date An invalid day of the month should return a 404 1`] = `
 Object {
-  "api": "https://test.frontity.org/wp-json",
+  "api": "https://test.sileajs.com/wp-json",
   "attachment": Object {},
   "author": Object {},
   "authorBase": "",
@@ -74,7 +74,7 @@ Object {
 
 exports[`date An invalid month of the year should return a 404 1`] = `
 Object {
-  "api": "https://test.frontity.org/wp-json",
+  "api": "https://test.sileajs.com/wp-json",
   "attachment": Object {},
   "author": Object {},
   "authorBase": "",
@@ -131,7 +131,7 @@ Array [
 
 exports[`date fetchs from a different endpoint with extra params 2`] = `
 Object {
-  "api": "https://test.frontity.org/wp-json",
+  "api": "https://test.sileajs.com/wp-json",
   "attachment": Object {
     "1": Object {
       "author": 1,
@@ -327,7 +327,7 @@ Array [
 
 exports[`date get January 1, 2019 2`] = `
 Object {
-  "api": "https://test.frontity.org/wp-json",
+  "api": "https://test.sileajs.com/wp-json",
   "attachment": Object {
     "1": Object {
       "author": 1,
@@ -467,7 +467,7 @@ Array [
 
 exports[`date get January, 2019 2`] = `
 Object {
-  "api": "https://test.frontity.org/wp-json",
+  "api": "https://test.sileajs.com/wp-json",
   "attachment": Object {
     "1": Object {
       "author": 1,
@@ -667,7 +667,7 @@ Array [
 
 exports[`date get two pages of year 2019 (with query params) 2`] = `
 Object {
-  "api": "https://test.frontity.org/wp-json",
+  "api": "https://test.sileajs.com/wp-json",
   "attachment": Object {
     "1": Object {
       "author": 1,
@@ -1034,7 +1034,7 @@ Array [
 
 exports[`date get two pages of year 2019 2`] = `
 Object {
-  "api": "https://test.frontity.org/wp-json",
+  "api": "https://test.sileajs.com/wp-json",
   "attachment": Object {
     "1": Object {
       "author": 1,
@@ -1368,7 +1368,7 @@ Object {
 
 exports[`date overwrites the data when fetched with { force: true } 1`] = `
 Object {
-  "api": "https://test.frontity.org/wp-json",
+  "api": "https://test.sileajs.com/wp-json",
   "attachment": Object {
     "1": Object {
       "author": 1,
@@ -1687,7 +1687,7 @@ Array [
 
 exports[`date returns 404 if the page fetched is empty 2`] = `
 Object {
-  "api": "https://test.frontity.org/wp-json",
+  "api": "https://test.sileajs.com/wp-json",
   "attachment": Object {},
   "author": Object {},
   "authorBase": "",
