@@ -1,8 +1,8 @@
 [
-  {
-    "name": "settings-with-length-one",
-    "mode": "default",
-    "state": {},
-    "packages": []
-  }
+	{
+		"name": "settings-with-length-one",
+		"mode": "default",
+		"state": {},
+		"packages": []
+	}
 ]

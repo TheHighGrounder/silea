@@ -9,21 +9,21 @@ const lintStaged = require("lint-staged");
  * reverting the prettier changes if eslint fails.
  */
 (async () => {
-  try {
-    await lintStaged({
-      allowEmpty: true,
-      config: {
-        "*.{js,jsx,ts,tsx}": ["prettier --write", "git add"],
-      },
-    });
-    await lintStaged({
-      allowEmpty: true,
-      config: {
-        "*.{js,jsx,ts,tsx}": ["eslint --fix", "git add"],
-      },
-    });
-  } catch (e) {
-    // Failed to load configuration.
-    console.error(e);
-  }
+	try {
+		await lintStaged({
+			allowEmpty: true,
+			config: {
+				"*.{js,jsx,ts,tsx}": ["prettier --write", "git add"],
+			},
+		});
+		await lintStaged({
+			allowEmpty: true,
+			config: {
+				"*.{js,jsx,ts,tsx}": ["eslint --fix", "git add"],
+			},
+		});
+	} catch (e) {
+		// Failed to load configuration.
+		console.error(e);
+	}
 })();

@@ -7,87 +7,87 @@ import { tmpdir } from "os";
 const projectDir = realpathSync(tmpdir());
 
 afterEach(() => {
-  // We need to restore the mock, otherwise it breaks jest
-  //github.com/tschaub/mock-fs#example
-  mock.restore();
+	// We need to restore the mock, otherwise it breaks jest
+	//github.com/tschaub/mock-fs#example
+	mock.restore();
 });
 
 beforeEach(() => {
-  // The createSymLinks step is using the CWD to determine the running dir, so we're "mocking" it
-  process.env.CWD = projectDir;
+	// The createSymLinks step is using the CWD to determine the running dir, so we're "mocking" it
+	process.env.CWD = projectDir;
 });
 
 describe("Create Symlink", () => {
-  test("should create symlink if path is valid and exist", async () => {
-    mock({
-      [`${projectDir}/package.json`]: `{
+	test("should create symlink if path is valid and exist", async () => {
+		mock({
+			[`${projectDir}/package.json`]: `{
           "name": "someDep",
           "dependencies": {
             "someDep": "./packages/someDep"
           }
         }`,
-      [`${projectDir}/packages/someDep`]: {
-        "package.json": `{ name: "someDep" }`,
-      },
-    });
+			[`${projectDir}/packages/someDep`]: {
+				"package.json": `{ name: "someDep" }`,
+			},
+		});
 
-    await createSymlinks();
+		await createSymlinks();
 
-    const stats = lstatSync("./node_modules/someDep");
-    expect(stats.isSymbolicLink()).toBe(true);
-  });
+		const stats = lstatSync("./node_modules/someDep");
+		expect(stats.isSymbolicLink()).toBe(true);
+	});
 
-  test("should create symlink if package path is prefixed with file:", async () => {
-    mock({
-      [`${projectDir}/package.json`]: `{
+	test("should create symlink if package path is prefixed with file:", async () => {
+		mock({
+			[`${projectDir}/package.json`]: `{
           "name": "someDep",
           "dependencies": {
             "dep-with-file": "file:./packages/dep-with-file"
           }
         }`,
-      [`${projectDir}/packages/dep-with-file`]: {
-        "package.json": `{ name: "dep-with-file" }`,
-      },
-    });
+			[`${projectDir}/packages/dep-with-file`]: {
+				"package.json": `{ name: "dep-with-file" }`,
+			},
+		});
 
-    await createSymlinks();
+		await createSymlinks();
 
-    const stats = lstatSync("./node_modules/dep-with-file");
-    expect(stats.isSymbolicLink()).toBe(true);
-  });
+		const stats = lstatSync("./node_modules/dep-with-file");
+		expect(stats.isSymbolicLink()).toBe(true);
+	});
 
-  test("should throw error if package does not exist", async () => {
-    const packageName = "dep-with-file";
+	test("should throw error if package does not exist", async () => {
+		const packageName = "dep-with-file";
 
-    mock({
-      [`${projectDir}/package.json`]: `{
+		mock({
+			[`${projectDir}/package.json`]: `{
         "name": "someDep",
         "dependencies": {
           "${packageName}": "file:./packages/${packageName}"
         }
       }`,
-    });
+		});
 
-    await expect(createSymlinks()).rejects.toThrow(
-      `${projectDir}/packages/${packageName} for ${packageName} does not exist.`
-    );
-  });
+		await expect(createSymlinks()).rejects.toThrow(
+			`${projectDir}/packages/${packageName} for ${packageName} does not exist.`
+		);
+	});
 
-  test("should throw error if path is not a valid packaged", async () => {
-    const packageName = "dep-with-file";
+	test("should throw error if path is not a valid packaged", async () => {
+		const packageName = "dep-with-file";
 
-    mock({
-      [`${projectDir}/package.json`]: `{
+		mock({
+			[`${projectDir}/package.json`]: `{
         "name": "someDep",
         "dependencies": {
           "${packageName}": "file:./packages/${packageName}"
         }
       }`,
-      [`${projectDir}/packages/${packageName}`]: {},
-    });
+			[`${projectDir}/packages/${packageName}`]: {},
+		});
 
-    await expect(createSymlinks()).rejects.toThrow(
-      `${packageName} is not a valid node package.`
-    );
-  });
+		await expect(createSymlinks()).rejects.toThrow(
+			`${packageName} is not a valid node package.`
+		);
+	});
 });

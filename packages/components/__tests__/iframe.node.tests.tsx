@@ -4,62 +4,62 @@
 
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { HelmetProvider } from "frontity";
+import { HelmetProvider } from "silea";
 import { FilledContext } from "react-helmet-async";
 import Iframe from "../iframe";
 
 describe("Iframe", () => {
-  test('It\'s a normal iframe if loading === "eager"', () => {
-    const loading: "lazy" | "eager" = "eager";
-    const props = {
-      title: "Some fake title",
-      src: "https://fake-src.com",
-      className: "fake-class-name",
-      loading,
-    };
+	test('It\'s a normal iframe if loading === "eager"', () => {
+		const loading: "lazy" | "eager" = "eager";
+		const props = {
+			title: "Some fake title",
+			src: "https://fake-src.com",
+			className: "fake-class-name",
+			loading,
+		};
 
-    const iframe = TestRenderer.create(<Iframe {...props} />).toJSON();
-    expect(iframe).toMatchSnapshot();
-  });
+		const iframe = TestRenderer.create(<Iframe {...props} />).toJSON();
+		expect(iframe).toMatchSnapshot();
+	});
 
-  test("works on server (without height)", () => {
-    const props = {
-      title: "Some fake title",
-      src: "https://frontity.com",
-      className: "fake-class-name",
-    };
+	test("works on server (without height)", () => {
+		const props = {
+			title: "Some fake title",
+			src: "https://silea.com",
+			className: "fake-class-name",
+		};
 
-    const helmetContext = {} as FilledContext;
-    const iframe = TestRenderer.create(
-      <HelmetProvider context={helmetContext}>
-        <Iframe {...props} />
-      </HelmetProvider>
-    ).toJSON();
-    const head = helmetContext.helmet;
+		const helmetContext = {} as FilledContext;
+		const iframe = TestRenderer.create(
+			<HelmetProvider context={helmetContext}>
+				<Iframe {...props} />
+			</HelmetProvider>
+		).toJSON();
+		const head = helmetContext.helmet;
 
-    expect(iframe).toMatchSnapshot();
-    expect(head.script.toString()).toMatchSnapshot();
-    expect(head.noscript.toString()).toMatchSnapshot();
-  });
+		expect(iframe).toMatchSnapshot();
+		expect(head.script.toString()).toMatchSnapshot();
+		expect(head.noscript.toString()).toMatchSnapshot();
+	});
 
-  test("works on server (with height)", () => {
-    const props = {
-      title: "Some fake alt text",
-      src: "https://fake-src.com",
-      className: "fake-class-name",
-      height: 300,
-    };
+	test("works on server (with height)", () => {
+		const props = {
+			title: "Some fake alt text",
+			src: "https://fake-src.com",
+			className: "fake-class-name",
+			height: 300,
+		};
 
-    const helmetContext = {} as FilledContext;
-    const iframe = TestRenderer.create(
-      <HelmetProvider context={helmetContext}>
-        <Iframe {...props} />
-      </HelmetProvider>
-    ).toJSON();
-    const head = helmetContext.helmet;
+		const helmetContext = {} as FilledContext;
+		const iframe = TestRenderer.create(
+			<HelmetProvider context={helmetContext}>
+				<Iframe {...props} />
+			</HelmetProvider>
+		).toJSON();
+		const head = helmetContext.helmet;
 
-    expect(iframe).toMatchSnapshot();
-    expect(head.script.toString()).toMatchSnapshot();
-    expect(head.noscript.toString()).toMatchSnapshot();
-  });
+		expect(iframe).toMatchSnapshot();
+		expect(head.script.toString()).toMatchSnapshot();
+		expect(head.noscript.toString()).toMatchSnapshot();
+	});
 });

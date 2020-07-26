@@ -1,0 +1,32 @@
+{
+	"name": "babel-plugin-silea",
+	"version": "0.0.0",
+	"description": "Babel Plugin for Silea",
+	"keywords": [
+		"silea"
+	],
+	"homepage": "https://sileajs.com",
+	"license": "SEE LICENSE IN LICENSE",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sileajs/silea.git"
+	},
+	"bugs": {
+		"url": "https://community.sileajs.com"
+	},
+	"scripts": {
+		"test:ci": "../../node_modules/.bin/jest --ci --coverage",
+		"test": "../../node_modules/.bin/jest --watch",
+		"test:inspect": "node --inspect ../../node_modules/.bin/jest --watch --no-cache --runInBand",
+		"build": "tsc --project ./tsconfig.build.json",
+		"prepublish": "npm run build"
+	},
+	"dependencies": {
+		"@babel/types": "7.10.5"
+	},
+	"devDependencies": {
+		"babel-plugin-tester": "9.2.0"
+	}
+}

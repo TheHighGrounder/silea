@@ -3,13 +3,13 @@ import Component from "./libraries/component";
 import script from "../processors/script";
 
 const html2react: Html2React = {
-  name: "@frontity/html2react",
-  libraries: {
-    html2react: {
-      processors: [script],
-      Component,
-    },
-  },
+	name: "@sileajs/html2react",
+	libraries: {
+		html2react: {
+			processors: [script],
+			Component,
+		},
+	},
 };
 
 export default html2react;

@@ -6,7 +6,7 @@ result in your issue being closed.
 <!--
 Please make sure you're familiar with and follow the instructions in the
 contributing guidelines found in the
-https://docs.frontity.org/contributing/code-contributions.
+https://docs.sileajs.com/contributing/code-contributions.
 -->
 
 <!--
@@ -39,21 +39,21 @@ merge of your pull request!
 
 <!-- Move any unrelated task to the Unrelated tasks section below. -->
 
-- [ ] Code
-- [ ] TSDocs
-- [ ] TypeScript
-- [ ] Unit tests
-- [ ] End to end tests
-- [ ] TypeScript tests
-- [ ] Update starter themes
-- [ ] Update other packages
-- [ ] Open an issue for this feature in the [docs repo](https://github.com/frontity/docs/wiki/Code-Releases)
-- [ ] Update community discussions
-- [ ] Add a changeset (with link to its [Feature Discussion](https://community.frontity.org/c/33) if it exists)
+-   [ ] Code
+-   [ ] TSDocs
+-   [ ] TypeScript
+-   [ ] Unit tests
+-   [ ] End to end tests
+-   [ ] TypeScript tests
+-   [ ] Update starter themes
+-   [ ] Update other packages
+-   [ ] Open an issue for this feature in the [docs repo](https://github.com/sileajs/docs/wiki/Code-Releases)
+-   [ ] Update community discussions
+-   [ ] Add a changeset (with link to its [Feature Discussion](https://community.sileajs.com/c/33) if it exists)
 
 <!-- Changesets are necessary if your changes should release any packages.
 Run `npx changeset` to create a changeset.
-More info at https://docs.frontity.org/contributing/code-contribution-guide#what-is-a-changeset -->
+More info at https://docs.sileajs.com/contributing/code-contribution-guide#what-is-a-changeset -->
 
 **Unrelated Tasks**
 

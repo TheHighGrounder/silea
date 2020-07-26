@@ -1,10 +1,10 @@
 {
-  "name": "e2e-use-in-view",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Package to do e2e testing of Frontity's useInView hook",
-  "dependencies": {
-    "frontity": "^1.4.3",
-    "@frontity/hooks": "^2.0.0"
-  }
+	"name": "e2e-use-in-view",
+	"version": "0.0.0",
+	"private": true,
+	"description": "Package to do e2e testing of Silea's useInView hook",
+	"dependencies": {
+		"silea": "0.0.0",
+		"@sileajs/hooks": "0.0.0"
+	}
 }

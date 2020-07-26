@@ -1,6 +1,6 @@
 import React from "react";
-import { connect, useConnect } from "frontity";
-import Link from "@frontity/components/link";
+import { connect, useConnect } from "silea";
+import Link from "@sileajs/components/link";
 
 /**
  * The TwentyLink component, which is a wrapper on top of the {@link Link}
@@ -18,28 +18,28 @@ import Link from "@frontity/components/link";
  * @returns A {@link Link} component, which returns an HTML anchor element.
  */
 const TwentyLink = ({ children, onClick: onClickProp, ...props }) => {
-  const { state, actions } = useConnect();
+	const { state, actions } = useConnect();
 
-  /**
-   * A handler that closes the mobile menu when a link is clicked.
-   *
-   * @param event The event object.
-   */
-  const onClick = (event) => {
-    if (state.theme.isMobileMenuOpen) {
-      actions.theme.closeMobileMenu();
-    }
+	/**
+	 * A handler that closes the mobile menu when a link is clicked.
+	 *
+	 * @param event The event object.
+	 */
+	const onClick = (event) => {
+		if (state.theme.isMobileMenuOpen) {
+			actions.theme.closeMobileMenu();
+		}
 
-    if (onClickProp) {
-      onClickProp(event);
-    }
-  };
+		if (onClickProp) {
+			onClickProp(event);
+		}
+	};
 
-  return (
-    <Link {...props} onClick={onClick}>
-      {children}
-    </Link>
-  );
+	return (
+		<Link {...props} onClick={onClick}>
+			{children}
+		</Link>
+	);
 };
 
 export default connect(TwentyLink, { injectProps: false });

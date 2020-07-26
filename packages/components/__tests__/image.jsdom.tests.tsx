@@ -5,194 +5,194 @@
 
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import useInView from "@frontity/hooks/use-in-view";
+import useInView from "@sileajs/hooks/use-in-view";
 import Image from "../image";
 
-jest.mock("@frontity/hooks/use-in-view", () => ({
-  __esModule: true,
-  default: jest.fn(),
+jest.mock("@sileajs/hooks/use-in-view", () => ({
+	__esModule: true,
+	default: jest.fn(),
 }));
 
 describe("Image", () => {
-  const mockedUseInView = useInView as jest.MockedFunction<typeof useInView>;
+	const mockedUseInView = useInView as jest.MockedFunction<typeof useInView>;
 
-  beforeEach(() => {
-    delete (HTMLImageElement as any).prototype.loading;
-    Object.defineProperty(window, "IntersectionObserver", {
-      writable: true,
-      value: jest.fn(),
-    });
-  });
+	beforeEach(() => {
+		delete (HTMLImageElement as any).prototype.loading;
+		Object.defineProperty(window, "IntersectionObserver", {
+			writable: true,
+			value: jest.fn(),
+		});
+	});
 
-  afterEach(() => {
-    mockedUseInView.mockReset();
-  });
+	afterEach(() => {
+		mockedUseInView.mockReset();
+	});
 
-  test('works when loading === "eager"', () => {
-    const loading: "lazy" | "eager" = "eager";
-    const props = {
-      alt: "Some fake alt text",
-      src: "https://fake-src.com/fake-image.jpg",
-      srcSet:
-        "https://fake-src.com/fake-image.jpg?w=300 300w, https://fake-src.com/fake-image.jpg?w=150 150w",
-      className: "fake-class-name",
-      loading,
-    };
+	test('works when loading === "eager"', () => {
+		const loading: "lazy" | "eager" = "eager";
+		const props = {
+			alt: "Some fake alt text",
+			src: "https://fake-src.com/fake-image.jpg",
+			srcSet:
+				"https://fake-src.com/fake-image.jpg?w=300 300w, https://fake-src.com/fake-image.jpg?w=150 150w",
+			className: "fake-class-name",
+			loading,
+		};
 
-    mockedUseInView.mockReturnValue({
-      ref: () => {},
-      inView: false,
-      supported: true,
-    });
+		mockedUseInView.mockReturnValue({
+			ref: () => {},
+			inView: false,
+			supported: true,
+		});
 
-    const result = TestRenderer.create(<Image {...props} />).toJSON();
-    expect(result).toMatchSnapshot();
-  });
+		const result = TestRenderer.create(<Image {...props} />).toJSON();
+		expect(result).toMatchSnapshot();
+	});
 
-  test("works with native lazy load and component did not mount", () => {
-    (HTMLImageElement as any).prototype.loading = true;
+	test("works with native lazy load and component did not mount", () => {
+		(HTMLImageElement as any).prototype.loading = true;
 
-    mockedUseInView.mockReturnValue({
-      ref: () => {},
-      inView: false,
-      supported: true,
-    });
+		mockedUseInView.mockReturnValue({
+			ref: () => {},
+			inView: false,
+			supported: true,
+		});
 
-    const props = {
-      alt: "Some fake alt text",
-      src: "https://fake-src.com/fake-image.jpg",
-      srcSet:
-        "https://fake-src.com/fake-image.jpg?w=300 300w, https://fake-src.com/fake-image.jpg?w=150 150w",
-      className: "fake-class-name",
-      loading: "lazy" as "lazy",
-      height: 300,
-      state: { frontity: { rendering: "ssr" } },
-    };
+		const props = {
+			alt: "Some fake alt text",
+			src: "https://fake-src.com/fake-image.jpg",
+			srcSet:
+				"https://fake-src.com/fake-image.jpg?w=300 300w, https://fake-src.com/fake-image.jpg?w=150 150w",
+			className: "fake-class-name",
+			loading: "lazy" as "lazy",
+			height: 300,
+			state: { silea: { rendering: "ssr" } },
+		};
 
-    const result = TestRenderer.create(<Image {...props} />);
-    expect(result.toJSON()).toMatchSnapshot();
-  });
+		const result = TestRenderer.create(<Image {...props} />);
+		expect(result.toJSON()).toMatchSnapshot();
+	});
 
-  test("works with native lazy load and component did mount", () => {
-    (HTMLImageElement as any).prototype.loading = true;
+	test("works with native lazy load and component did mount", () => {
+		(HTMLImageElement as any).prototype.loading = true;
 
-    mockedUseInView.mockReturnValue({
-      ref: () => {},
-      inView: false,
-      supported: true,
-    });
+		mockedUseInView.mockReturnValue({
+			ref: () => {},
+			inView: false,
+			supported: true,
+		});
 
-    const props = {
-      alt: "Some fake alt text",
-      src: "https://fake-src.com/fake-image.jpg",
-      srcSet:
-        "https://fake-src.com/fake-image.jpg?w=300 300w, https://fake-src.com/fake-image.jpg?w=150 150w",
-      className: "fake-class-name",
-      loading: "lazy" as "lazy",
-      height: 300,
-      state: { frontity: { rendering: "csr" } },
-    };
+		const props = {
+			alt: "Some fake alt text",
+			src: "https://fake-src.com/fake-image.jpg",
+			srcSet:
+				"https://fake-src.com/fake-image.jpg?w=300 300w, https://fake-src.com/fake-image.jpg?w=150 150w",
+			className: "fake-class-name",
+			loading: "lazy" as "lazy",
+			height: 300,
+			state: { silea: { rendering: "csr" } },
+		};
 
-    const result = TestRenderer.create(<Image {...props} />);
-    expect(result.toJSON()).toMatchSnapshot();
-  });
+		const result = TestRenderer.create(<Image {...props} />);
+		expect(result.toJSON()).toMatchSnapshot();
+	});
 
-  test("works with `IntersectionObserver if `height` prop is not specified", () => {
-    (HTMLImageElement as any).prototype.loading = true;
+	test("works with `IntersectionObserver if `height` prop is not specified", () => {
+		(HTMLImageElement as any).prototype.loading = true;
 
-    mockedUseInView.mockReturnValue({
-      ref: () => {},
-      inView: false,
-      supported: true,
-    });
+		mockedUseInView.mockReturnValue({
+			ref: () => {},
+			inView: false,
+			supported: true,
+		});
 
-    const props = {
-      alt: "Some fake alt text",
-      src: "https://fake-src.com/fake-image.jpg",
-      srcSet:
-        "https://fake-src.com/fake-image.jpg?w=300 300w, https://fake-src.com/fake-image.jpg?w=150 150w",
-      className: "fake-class-name",
-      loading: "lazy" as "lazy",
-    };
+		const props = {
+			alt: "Some fake alt text",
+			src: "https://fake-src.com/fake-image.jpg",
+			srcSet:
+				"https://fake-src.com/fake-image.jpg?w=300 300w, https://fake-src.com/fake-image.jpg?w=150 150w",
+			className: "fake-class-name",
+			loading: "lazy" as "lazy",
+		};
 
-    const result = TestRenderer.create(<Image {...props} />);
-    expect(result.toJSON()).toMatchSnapshot();
-  });
+		const result = TestRenderer.create(<Image {...props} />);
+		expect(result.toJSON()).toMatchSnapshot();
+	});
 
-  test("works with `IntersectionObserver` and is out of view", () => {
-    mockedUseInView.mockReturnValue({
-      ref: () => {},
-      inView: false,
-      supported: true,
-    });
+	test("works with `IntersectionObserver` and is out of view", () => {
+		mockedUseInView.mockReturnValue({
+			ref: () => {},
+			inView: false,
+			supported: true,
+		});
 
-    const props = {
-      alt: "Some fake alt text",
-      src: "https://fake-src.com/fake-image.jpg",
-      srcSet:
-        "https://fake-src.com/fake-image.jpg?w=300 300w, https://fake-src.com/fake-image.jpg?w=150 150w",
-      className: "fake-class-name",
-    };
+		const props = {
+			alt: "Some fake alt text",
+			src: "https://fake-src.com/fake-image.jpg",
+			srcSet:
+				"https://fake-src.com/fake-image.jpg?w=300 300w, https://fake-src.com/fake-image.jpg?w=150 150w",
+			className: "fake-class-name",
+		};
 
-    const result = TestRenderer.create(<Image {...props} />);
-    expect(result.toJSON()).toMatchSnapshot();
-  });
+		const result = TestRenderer.create(<Image {...props} />);
+		expect(result.toJSON()).toMatchSnapshot();
+	});
 
-  test("works with `IntersectionObserver` and is in view", () => {
-    mockedUseInView.mockReturnValue({
-      ref: () => {},
-      inView: true,
-      supported: true,
-    });
-    const props = {
-      alt: "Some fake alt text",
-      src: "https://fake-src.com/fake-image.jpg",
-      srcSet:
-        "https://fake-src.com/fake-image.jpg?w=300 300w, https://fake-src.com/fake-image.jpg?w=150 150w",
-      className: "fake-class-name",
-    };
+	test("works with `IntersectionObserver` and is in view", () => {
+		mockedUseInView.mockReturnValue({
+			ref: () => {},
+			inView: true,
+			supported: true,
+		});
+		const props = {
+			alt: "Some fake alt text",
+			src: "https://fake-src.com/fake-image.jpg",
+			srcSet:
+				"https://fake-src.com/fake-image.jpg?w=300 300w, https://fake-src.com/fake-image.jpg?w=150 150w",
+			className: "fake-class-name",
+		};
 
-    const result = TestRenderer.create(<Image {...props} />);
-    expect(result.toJSON()).toMatchSnapshot();
-  });
+		const result = TestRenderer.create(<Image {...props} />);
+		expect(result.toJSON()).toMatchSnapshot();
+	});
 
-  test("works without `IntersectionObserver` and component did not mount", () => {
-    const props = {
-      alt: "Some fake alt text",
-      src: "https://fake-src.com/fake-image.jpg",
-      srcSet:
-        "https://fake-src.com/fake-image.jpg?w=300 300w, https://fake-src.com/fake-image.jpg?w=150 150w",
-      className: "fake-class-name",
-      state: { frontity: { rendering: "ssr" } },
-    };
+	test("works without `IntersectionObserver` and component did not mount", () => {
+		const props = {
+			alt: "Some fake alt text",
+			src: "https://fake-src.com/fake-image.jpg",
+			srcSet:
+				"https://fake-src.com/fake-image.jpg?w=300 300w, https://fake-src.com/fake-image.jpg?w=150 150w",
+			className: "fake-class-name",
+			state: { silea: { rendering: "ssr" } },
+		};
 
-    mockedUseInView.mockReturnValue({
-      ref: undefined,
-      inView: true,
-      supported: false,
-    });
+		mockedUseInView.mockReturnValue({
+			ref: undefined,
+			inView: true,
+			supported: false,
+		});
 
-    const image = TestRenderer.create(<Image {...props} />).toJSON();
-    expect(image).toMatchSnapshot();
-  });
+		const image = TestRenderer.create(<Image {...props} />).toJSON();
+		expect(image).toMatchSnapshot();
+	});
 
-  test("works without `IntersectionObserver` and component did mount", () => {
-    const props = {
-      alt: "Some fake alt text",
-      src: "https://fake-src.com/fake-image.jpg",
-      srcSet:
-        "https://fake-src.com/fake-image.jpg?w=300 300w, https://fake-src.com/fake-image.jpg?w=150 150w",
-      className: "fake-class-name",
-      state: { frontity: { rendering: "csr" } },
-    };
+	test("works without `IntersectionObserver` and component did mount", () => {
+		const props = {
+			alt: "Some fake alt text",
+			src: "https://fake-src.com/fake-image.jpg",
+			srcSet:
+				"https://fake-src.com/fake-image.jpg?w=300 300w, https://fake-src.com/fake-image.jpg?w=150 150w",
+			className: "fake-class-name",
+			state: { silea: { rendering: "csr" } },
+		};
 
-    mockedUseInView.mockReturnValue({
-      ref: undefined,
-      inView: true,
-      supported: false,
-    });
+		mockedUseInView.mockReturnValue({
+			ref: undefined,
+			inView: true,
+			supported: false,
+		});
 
-    const image = TestRenderer.create(<Image {...props} />).toJSON();
-    expect(image).toMatchSnapshot();
-  });
+		const image = TestRenderer.create(<Image {...props} />).toJSON();
+		expect(image).toMatchSnapshot();
+	});
 });

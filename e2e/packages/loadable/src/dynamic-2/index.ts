@@ -1,4 +1,4 @@
-import { loadable } from "frontity";
+import { loadable } from "silea";
 
 const Dynamic2 = loadable(() => import("./dynamic-2"));
 

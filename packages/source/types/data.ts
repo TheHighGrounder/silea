@@ -1,73 +1,73 @@
 import { Merge } from "./utils";
 
 export type EntityData = {
-  type: string;
-  id: number;
-  link: string;
+	type: string;
+	id: number;
+	link: string;
 };
 
 /**
  * Type that represents objects stored in `state.source.data`.
  * These objects give information about data associated to a
- * given URL in a Frontity site.
+ * given URL in a Silea site.
  */
 export type Data =
-  | BaseData
-  | ErrorData
-  | TaxonomyData
-  | CategoryData
-  | TagData
-  | AuthorData
-  | PostTypeArchiveData
-  | PostArchiveData
-  | DateData
-  | PostTypeData
-  | PostData
-  | PageData
-  | AttachmentData
-  | TaxonomyWithSearchData
-  | CategoryWithSearchData
-  | TagWithSearchData
-  | AuthorWithSearchData
-  | PostTypeArchiveWithSearchData
-  | PostArchiveWithSearchData
-  | DateWithSearchData;
+	| BaseData
+	| ErrorData
+	| TaxonomyData
+	| CategoryData
+	| TagData
+	| AuthorData
+	| PostTypeArchiveData
+	| PostArchiveData
+	| DateData
+	| PostTypeData
+	| PostData
+	| PageData
+	| AttachmentData
+	| TaxonomyWithSearchData
+	| CategoryWithSearchData
+	| TagWithSearchData
+	| AuthorWithSearchData
+	| PostTypeArchiveWithSearchData
+	| PostArchiveWithSearchData
+	| DateWithSearchData;
 
 /**
  * Base properties of objects of types `Data`.
  */
 export type BaseData = {
-  link?: string;
-  query?: object;
-  type?: string;
-  id?: number;
-  taxonomy?: string;
-  isFetching: boolean;
-  isReady: boolean;
-  isError?: false;
-  isArchive?: false;
-  isTaxonomy?: false;
-  isCategory?: false;
-  isTag?: false;
-  isAuthor?: false;
-  isPostTypeArchive?: false;
-  isPostArchive?: false;
-  isDate?: false;
-  isPostType?: false;
-  isPost?: false;
-  isPage?: false;
-  isAttachment?: false;
-  isHome?: boolean;
+	link?: string;
+	query?: object;
+	type?: string;
+	id?: number;
+	taxonomy?: string;
+	isFetching: boolean;
+	isReady: boolean;
+	isError?: false;
+	isArchive?: false;
+	isTaxonomy?: false;
+	isCategory?: false;
+	isTag?: false;
+	isAuthor?: false;
+	isPostTypeArchive?: false;
+	isPostArchive?: false;
+	isDate?: false;
+	isPostType?: false;
+	isPost?: false;
+	isPage?: false;
+	isAttachment?: false;
+	isHome?: boolean;
 
-  // search attributes
-  isSearch?: false;
-  searchQuery?: string;
+	// search attributes
+	isSearch?: false;
+	searchQuery?: string;
 
-  // pagination atributes (for Archive)
-  page?: number;
-  route?: string;
-  next?: string;
-  previous?: string;
+	// pagination atributes (for Archive)
+	page?: number;
+	route?: string;
+	next?: string;
+	previous?: string;
 };
 
 // ERROR
@@ -79,41 +79,41 @@ export type BaseData = {
  * @property {string} errorStatusText
  */
 export type ErrorData = Merge<
-  BaseData,
-  {
-    isError: true;
-    errorStatus: number;
-    errorStatusText: string;
-    isReady: true;
-    isFetching: false;
+	BaseData,
+	{
+		isError: true;
+		errorStatus: number;
+		errorStatusText: string;
+		isReady: true;
+		isFetching: false;
 
-    // This is ugly but it seems like the best way.
-    // Also types are erased at runtime so it doesnt add to bundle size
-    is400?: boolean;
-    is401?: boolean;
-    is402?: boolean;
-    is403?: boolean;
-    is404?: boolean;
-    is405?: boolean;
-    is406?: boolean;
-    is407?: boolean;
-    is408?: boolean;
-    is409?: boolean;
-    is410?: boolean;
-    is411?: boolean;
-    is412?: boolean;
-    is413?: boolean;
-    is414?: boolean;
-    is415?: boolean;
-    is416?: boolean;
-    is417?: boolean;
-    is500?: boolean;
-    is501?: boolean;
-    is502?: boolean;
-    is503?: boolean;
-    is504?: boolean;
-    is505?: boolean;
-  }
+		// This is ugly but it seems like the best way.
+		// Also types are erased at runtime so it doesnt add to bundle size
+		is400?: boolean;
+		is401?: boolean;
+		is402?: boolean;
+		is403?: boolean;
+		is404?: boolean;
+		is405?: boolean;
+		is406?: boolean;
+		is407?: boolean;
+		is408?: boolean;
+		is409?: boolean;
+		is410?: boolean;
+		is411?: boolean;
+		is412?: boolean;
+		is413?: boolean;
+		is414?: boolean;
+		is415?: boolean;
+		is416?: boolean;
+		is417?: boolean;
+		is500?: boolean;
+		is501?: boolean;
+		is502?: boolean;
+		is503?: boolean;
+		is504?: boolean;
+		is505?: boolean;
+	}
 >;
 
 // ARCHIVES
@@ -131,17 +131,17 @@ export type ErrorData = Merge<
  * @property {false} isSearch
  */
 export type ArchiveData = Merge<
-  BaseData,
-  {
-    isArchive: true;
-    items: EntityData[];
-    page?: number;
-    path?: string;
-    next?: string;
-    previous?: string;
-    total?: number;
-    totalPages?: number;
-  }
+	BaseData,
+	{
+		isArchive: true;
+		items: EntityData[];
+		page?: number;
+		path?: string;
+		next?: string;
+		previous?: string;
+		total?: number;
+		totalPages?: number;
+	}
 >;
 
 /**
@@ -150,8 +150,8 @@ export type ArchiveData = Merge<
  * @property {string} searchQuery
  */
 export type SearchData = {
-  isSearch: true;
-  searchQuery: string;
+	isSearch: true;
+	searchQuery: string;
 };
 
 /**
@@ -161,12 +161,12 @@ export type SearchData = {
  * @property {number} id - Taxonomy id.
  */
 export type TaxonomyData = Merge<
-  ArchiveData,
-  {
-    isTaxonomy: true;
-    taxonomy: string;
-    id: number;
-  }
+	ArchiveData,
+	{
+		isTaxonomy: true;
+		taxonomy: string;
+		id: number;
+	}
 >;
 
 /**
@@ -180,11 +180,11 @@ export type TaxonomyWithSearchData = Merge<TaxonomyData, SearchData>;
  * @property {"category"} taxonomy
  */
 export type CategoryData = Merge<
-  TaxonomyData,
-  {
-    taxonomy: "category";
-    isCategory: true;
-  }
+	TaxonomyData,
+	{
+		taxonomy: "category";
+		isCategory: true;
+	}
 >;
 
 /**
@@ -198,11 +198,11 @@ export type CategoryWithSearchData = Merge<CategoryData, SearchData>;
  * @property {"tag"} taxonomy
  */
 export type TagData = Merge<
-  TaxonomyData,
-  {
-    taxonomy: "tag";
-    isTag: true;
-  }
+	TaxonomyData,
+	{
+		taxonomy: "tag";
+		isTag: true;
+	}
 >;
 
 /**
@@ -216,11 +216,11 @@ export type TagWithSearchData = Merge<TagData, SearchData>;
  * @property {number} id - Author id.
  */
 export type AuthorData = Merge<
-  ArchiveData,
-  {
-    isAuthor: true;
-    id: number;
-  }
+	ArchiveData,
+	{
+		isAuthor: true;
+		id: number;
+	}
 >;
 
 /**
@@ -234,11 +234,11 @@ export type AuthorWithSearchData = Merge<AuthorData, SearchData>;
  * @property {string} type - Post type slug.
  */
 export type PostTypeArchiveData = Merge<
-  ArchiveData,
-  {
-    isPostTypeArchive: true;
-    type: string;
-  }
+	ArchiveData,
+	{
+		isPostTypeArchive: true;
+		type: string;
+	}
 >;
 
 /**
@@ -246,8 +246,8 @@ export type PostTypeArchiveData = Merge<
  * with search pages.
  */
 export type PostTypeArchiveWithSearchData = Merge<
-  PostTypeArchiveData,
-  SearchData
+	PostTypeArchiveData,
+	SearchData
 >;
 
 /**
@@ -255,10 +255,10 @@ export type PostTypeArchiveWithSearchData = Merge<
  * @property {true} isPostArchive
  */
 export type PostArchiveData = Merge<
-  PostTypeArchiveData,
-  {
-    isPostArchive: true;
-  }
+	PostTypeArchiveData,
+	{
+		isPostArchive: true;
+	}
 >;
 
 /**
@@ -275,13 +275,13 @@ export type PostArchiveWithSearchData = Merge<PostArchiveData, SearchData>;
  * @property {number} day - The day number.
  */
 export type DateData = Merge<
-  ArchiveData,
-  {
-    isDate: true;
-    year: number;
-    month?: number;
-    day?: number;
-  }
+	ArchiveData,
+	{
+		isDate: true;
+		year: number;
+		month?: number;
+		day?: number;
+	}
 >;
 
 /**
@@ -299,12 +299,12 @@ export type DateWithSearchData = Merge<DateData, SearchData>;
  * @property {number} id - Entity id.
  */
 export type PostTypeData = Merge<
-  BaseData,
-  {
-    isPostType: true;
-    type: string;
-    id: number;
-  }
+	BaseData,
+	{
+		isPostType: true;
+		type: string;
+		id: number;
+	}
 >;
 
 /**
@@ -313,11 +313,11 @@ export type PostTypeData = Merge<
  * @property {"post"} type
  */
 export type PostData = Merge<
-  PostTypeData,
-  {
-    type: "post";
-    isPost: true;
-  }
+	PostTypeData,
+	{
+		type: "post";
+		isPost: true;
+	}
 >;
 
 /**
@@ -326,11 +326,11 @@ export type PostData = Merge<
  * @property {"page"} type
  */
 export type PageData = Merge<
-  PostTypeData,
-  {
-    type: "page";
-    isPage: true;
-  }
+	PostTypeData,
+	{
+		type: "page";
+		isPage: true;
+	}
 >;
 
 /**
@@ -339,9 +339,9 @@ export type PageData = Merge<
  * @property {"attachment"} type
  */
 export type AttachmentData = Merge<
-  PostTypeData,
-  {
-    type: "attachment";
-    isAttachment: true;
-  }
+	PostTypeData,
+	{
+		type: "attachment";
+		isAttachment: true;
+	}
 >;

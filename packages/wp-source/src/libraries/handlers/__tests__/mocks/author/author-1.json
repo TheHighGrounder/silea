@@ -1,6 +1,6 @@
 {
-  "id": 1,
-  "name": "Author 1",
-  "link": "https://test.frontity.org/author/author-1/",
-  "slug": "author-1"
+	"id": 1,
+	"name": "Author 1",
+	"link": "https://test.sileajs.com/author/author-1/",
+	"slug": "author-1"
 }

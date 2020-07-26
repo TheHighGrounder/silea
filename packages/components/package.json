@@ -1,30 +1,30 @@
 {
-  "name": "@frontity/components",
-  "version": "1.4.0",
-  "description": "Collection of React components for Frontity",
-  "keywords": [
-    "frontity"
-  ],
-  "homepage": "https://frontity.org",
-  "license": "Apache-2.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/frontity/frontity.git"
-  },
-  "bugs": {
-    "url": "https://community.frontity.org"
-  },
-  "scripts": {
-    "test:ci": "../../node_modules/.bin/jest --ci --coverage",
-    "test": "../../node_modules/.bin/jest --watch",
-    "test:inspect": "node --inspect ../../node_modules/.bin/jest --watch --no-cache --runInBand"
-  },
-  "devDependencies": {
-    "@types/react-test-renderer": "^16.9.2",
-    "react-test-renderer": "^16.13.1"
-  },
-  "dependencies": {
-    "frontity": "^1.10.0",
-    "@frontity/hooks": "^2.0.2"
-  }
+	"name": "@sileajs/components",
+	"version": "0.0.0",
+	"description": "Collection of React components for Silea",
+	"keywords": [
+		"silea"
+	],
+	"homepage": "https://sileajs.com",
+	"license": "SEE LICENSE IN LICENSE",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sileajs/silea.git"
+	},
+	"bugs": {
+		"url": "https://community.sileajs.com"
+	},
+	"scripts": {
+		"test:ci": "../../node_modules/.bin/jest --ci --coverage",
+		"test": "../../node_modules/.bin/jest --watch",
+		"test:inspect": "node --inspect ../../node_modules/.bin/jest --watch --no-cache --runInBand"
+	},
+	"devDependencies": {
+		"@types/react-test-renderer": "16.9.2",
+		"react-test-renderer": "16.13.1"
+	},
+	"dependencies": {
+		"silea": "0.0.0",
+		"@sileajs/hooks": "0.0.0"
+	}
 }

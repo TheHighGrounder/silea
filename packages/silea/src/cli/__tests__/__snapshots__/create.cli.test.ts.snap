@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CLI create SILEA_NAME='test-project'; silea create --no-prompt 1`] = `
+Object {
+  "name": "test-project",
+  "theme": undefined,
+  "typescript": false,
+}
+`;
+
+exports[`CLI create SILEA_TYPESCRIPT='true'; silea create 'test-project' --no-prompt 1`] = `
+Object {
+  "name": "test-project",
+  "theme": undefined,
+  "typescript": true,
+}
+`;
+
+exports[`CLI create silea create 'test-project' --theme 'test-theme' 1`] = `
+Object {
+  "name": "test-project",
+  "theme": "test-theme",
+  "typescript": true,
+}
+`;
+
+exports[`CLI create silea create 'test-project' --typescript 1`] = `
+Object {
+  "name": "test-project",
+  "theme": undefined,
+  "typescript": true,
+}
+`;
+
+exports[`CLI create silea create 'test-project' 1`] = `
+Object {
+  "name": "test-project",
+  "theme": "test-theme",
+  "typescript": false,
+}
+`;
+
+exports[`CLI create silea create 1`] = `
+Array [
+  Array [
+    Array [
+      Object {
+        "default": "my-silea-project",
+        "message": "Enter a name for the project:",
+        "name": "name",
+        "type": "input",
+      },
+    ],
+  ],
+  Array [
+    Array [
+      Object {
+        "choices": Array [
+          Object {
+            "name": "@sileajs/mars-theme (recommended)",
+            "value": "@sileajs/mars-theme",
+          },
+          Object {
+            "name": "@sileajs/twentytwenty-theme",
+            "value": "@sileajs/twentytwenty-theme",
+          },
+        ],
+        "default": "@sileajs/mars-theme",
+        "message": "Pick a starter theme to clone:",
+        "name": "theme",
+        "type": "list",
+      },
+    ],
+  ],
+  Array [
+    Array [
+      Object {
+        "default": false,
+        "message": "Do you want to receive framework updates by email?",
+        "name": "subscribe",
+        "type": "confirm",
+      },
+      Object {
+        "message": "Please, enter your email:",
+        "name": "email",
+        "type": "input",
+        "when": [Function],
+      },
+    ],
+  ],
+]
+`;

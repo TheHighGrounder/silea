@@ -1,9 +1,9 @@
 {
-  "name": "e2e-loadable",
-  "version": "1.0.1",
-  "private": true,
-  "description": "Package to do e2e testing of Frontity's loadable utility",
-  "dependencies": {
-    "frontity": "^1.4.3"
-  }
+	"name": "e2e-loadable",
+	"version": "0.0.0",
+	"private": true,
+	"description": "Package to do e2e testing of Silea's loadable utility",
+	"dependencies": {
+		"silea": "0.0.0"
+	}
 }

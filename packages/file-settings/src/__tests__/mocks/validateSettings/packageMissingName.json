@@ -1,21 +1,21 @@
 [
-  {
-    "name": "multi-settings-default",
-    "packages": [
-      "@frontity/theme-default",
-      {
-        "name": "@frontity/wp-source"
-      }
-    ]
-  },
-  {
-    "name": "multi-settings-amp",
-    "mode": "amp",
-    "packages": [
-      "@frontity/theme-amp",
-      {
-        "active": false
-      }
-    ]
-  }
+	{
+		"name": "multi-settings-default",
+		"packages": [
+			"@sileajs/theme-default",
+			{
+				"name": "@sileajs/wp-source"
+			}
+		]
+	},
+	{
+		"name": "multi-settings-amp",
+		"mode": "amp",
+		"packages": [
+			"@sileajs/theme-amp",
+			{
+				"active": false
+			}
+		]
+	}
 ]

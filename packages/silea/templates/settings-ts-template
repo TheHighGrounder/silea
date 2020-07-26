@@ -1,0 +1,5 @@
+import { Settings } from "silea/types";
+
+const settings: Settings = $settings$;
+
+export default settings;

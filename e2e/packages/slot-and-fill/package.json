@@ -1,9 +1,9 @@
 {
-  "name": "e2e-slot-and-fill",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Package to do e2e testing of Frontity's Slot and Fill tools",
-  "dependencies": {
-    "frontity": "^1.4.3"
-  }
+	"name": "e2e-slot-and-fill",
+	"version": "0.0.0",
+	"private": true,
+	"description": "Package to do e2e testing of Silea's Slot and Fill tools",
+	"dependencies": {
+		"silea": "0.0.0"
+	}
 }

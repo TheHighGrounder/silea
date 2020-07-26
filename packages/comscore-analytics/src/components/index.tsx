@@ -1,16 +1,16 @@
 import React from "react";
-import { Head, connect } from "frontity";
-import { Connect } from "frontity/types";
+import { Head, connect } from "silea";
+import { Connect } from "silea/types";
 import ComscoreAnalytics from "../../types";
 
 /**
  * Props used by {@link ComscoreHead}.
  */
 interface ComscoreHeadProps {
-  /**
-   * Comscore tracking ID.
-   */
-  id: string;
+	/**
+	 * Comscore tracking ID.
+	 */
+	id: string;
 }
 
 /**
@@ -26,12 +26,12 @@ interface ComscoreHeadProps {
  * @returns React element.
  */
 const ComscoreHead: React.FC<ComscoreHeadProps> = ({ id }) => (
-  <Head>
-    <noscript>
-      {`<img alt="comscore" src="https://sb.scorecardresearch.com/p?c1=2&c2=${id}&cv=2.0&cj=1" />`}
-    </noscript>
-    <script async src="https://sb.scorecardresearch.com/beacon.js" />
-  </Head>
+	<Head>
+		<noscript>
+			{`<img alt="comscore" src="https://sb.scorecardresearch.com/p?c1=2&c2=${id}&cv=2.0&cj=1" />`}
+		</noscript>
+		<script async src="https://sb.scorecardresearch.com/beacon.js" />
+	</Head>
 );
 
 /**
@@ -41,7 +41,7 @@ const ComscoreHead: React.FC<ComscoreHeadProps> = ({ id }) => (
  * in the state.
  *
  * @remarks
- * This component is automatically rendered by Frontity and it's not meant to be
+ * This component is automatically rendered by Silea and it's not meant to be
  * imported and used anywhere.
  *
  * @example roots.comscoreAnalytics
@@ -51,17 +51,17 @@ const ComscoreHead: React.FC<ComscoreHeadProps> = ({ id }) => (
  * @returns Root element.
  */
 export const Root: React.FC<Connect<ComscoreAnalytics>> = ({ state }) => {
-  // Get Tracking ids from state.
-  const { trackingIds, trackingId } = state.comscoreAnalytics;
-  const ids = trackingIds || (trackingId && [trackingId]) || [];
+	// Get Tracking ids from state.
+	const { trackingIds, trackingId } = state.comscoreAnalytics;
+	const ids = trackingIds || (trackingId && [trackingId]) || [];
 
-  return (
-    <>
-      {ids.map((id) => (
-        <ComscoreHead id={id} key={id} />
-      ))}
-    </>
-  );
+	return (
+		<>
+			{ids.map((id) => (
+				<ComscoreHead id={id} key={id} />
+			))}
+		</>
+	);
 };
 
 export default connect(Root);

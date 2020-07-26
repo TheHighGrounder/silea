@@ -5,7 +5,7 @@ Object {
   "es5": Object {
     "compact": true,
     "plugins": Array [
-      "babel-plugin-frontity",
+      "babel-plugin-silea",
       "babel-plugin-macros",
       "@babel/plugin-syntax-dynamic-import",
       "@loadable/babel-plugin",
@@ -56,7 +56,7 @@ Object {
   "module": Object {
     "compact": true,
     "plugins": Array [
-      "babel-plugin-frontity",
+      "babel-plugin-silea",
       "babel-plugin-macros",
       "@babel/plugin-syntax-dynamic-import",
       "@loadable/babel-plugin",
@@ -92,7 +92,7 @@ Object {
   "server": Object {
     "compact": true,
     "plugins": Array [
-      "babel-plugin-frontity",
+      "babel-plugin-silea",
       "babel-plugin-macros",
       "@babel/plugin-syntax-dynamic-import",
       "@loadable/babel-plugin",
@@ -133,7 +133,7 @@ Object {
   "es5": Object {
     "compact": true,
     "plugins": Array [
-      "babel-plugin-frontity",
+      "babel-plugin-silea",
       "babel-plugin-macros",
       "@babel/plugin-syntax-dynamic-import",
       "@loadable/babel-plugin",
@@ -184,7 +184,7 @@ Object {
   "module": Object {
     "compact": true,
     "plugins": Array [
-      "babel-plugin-frontity",
+      "babel-plugin-silea",
       "babel-plugin-macros",
       "@babel/plugin-syntax-dynamic-import",
       "@loadable/babel-plugin",
@@ -220,7 +220,7 @@ Object {
   "server": Object {
     "compact": true,
     "plugins": Array [
-      "babel-plugin-frontity",
+      "babel-plugin-silea",
       "babel-plugin-macros",
       "@babel/plugin-syntax-dynamic-import",
       "@loadable/babel-plugin",

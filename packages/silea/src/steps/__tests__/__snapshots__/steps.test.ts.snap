@@ -1,0 +1,455 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`cloneStarterTheme works as expected 1`] = `
+Array [
+  Array [
+    "/path/to/project/package.json",
+    Object {
+      "encoding": "utf8",
+    },
+  ],
+]
+`;
+
+exports[`cloneStarterTheme works as expected 2`] = `
+Array [
+  Array [
+    "/path/to/project/packages/mars-theme",
+  ],
+]
+`;
+
+exports[`cloneStarterTheme works as expected 3`] = `
+Array [
+  Array [
+    "@sileajs/mars-theme",
+  ],
+]
+`;
+
+exports[`cloneStarterTheme works as expected 4`] = `
+Array [
+  Array [
+    "npm pack @sileajs/mars-theme",
+    Object {
+      "cwd": "/path/to/project/packages/mars-theme",
+    },
+    [Function],
+  ],
+]
+`;
+
+exports[`cloneStarterTheme works as expected 5`] = `
+Array [
+  Array [
+    "/path/to/project/packages/mars-theme",
+  ],
+]
+`;
+
+exports[`cloneStarterTheme works as expected 6`] = `
+Array [
+  Array [
+    Object {
+      "cwd": "/path/to/project/packages/mars-theme",
+      "file": "/path/to/project/packages/mars-theme/file.tgz",
+      "strip": 1,
+    },
+  ],
+]
+`;
+
+exports[`cloneStarterTheme works as expected 7`] = `
+Array [
+  Array [
+    "/path/to/project/packages/mars-theme/file.tgz",
+  ],
+]
+`;
+
+exports[`createSileaSettings works when extension is \`js\` 1`] = `
+Array [
+  Array [
+    "/path/to/project/silea.settings.js",
+    "{
+  \\"name\\": \\"random-name\\",
+  \\"state\\": {
+    \\"silea\\": {
+      \\"url\\": \\"https://test.sileajs.com\\",
+      \\"title\\": \\"Test Silea Blog\\",
+      \\"description\\": \\"WordPress installation for Silea development\\"
+    }
+  },
+  \\"packages\\": [
+    {
+      \\"name\\": \\"@sileajs/mars-theme\\",
+      \\"state\\": {
+        \\"theme\\": {
+          \\"menu\\": [
+            [
+              \\"Home\\",
+              \\"/\\"
+            ],
+            [
+              \\"Nature\\",
+              \\"/category/nature/\\"
+            ],
+            [
+              \\"Travel\\",
+              \\"/category/travel/\\"
+            ],
+            [
+              \\"Japan\\",
+              \\"/tag/japan/\\"
+            ],
+            [
+              \\"About Us\\",
+              \\"/about-us/\\"
+            ]
+          ],
+          \\"featured\\": {
+            \\"showOnList\\": false,
+            \\"showOnPost\\": false
+          }
+        }
+      }
+    },
+    {
+      \\"name\\": \\"@sileajs/wp-source\\",
+      \\"state\\": {
+        \\"source\\": {
+          \\"api\\": \\"https://test.sileajs.com/wp-json\\"
+        }
+      }
+    },
+    \\"@sileajs/tiny-router\\",
+    \\"@sileajs/html2react\\"
+  ]
+}",
+  ],
+]
+`;
+
+exports[`createSileaSettings works when extension is \`ts\` 1`] = `
+Array [
+  Array [
+    "/path/to/project/silea.settings.ts",
+    "{
+  \\"name\\": \\"random-name\\",
+  \\"state\\": {
+    \\"silea\\": {
+      \\"url\\": \\"https://test.sileajs.com\\",
+      \\"title\\": \\"Test Silea Blog\\",
+      \\"description\\": \\"WordPress installation for Silea development\\"
+    }
+  },
+  \\"packages\\": [
+    {
+      \\"name\\": \\"@sileajs/mars-theme\\",
+      \\"state\\": {
+        \\"theme\\": {
+          \\"menu\\": [
+            [
+              \\"Home\\",
+              \\"/\\"
+            ],
+            [
+              \\"Nature\\",
+              \\"/category/nature/\\"
+            ],
+            [
+              \\"Travel\\",
+              \\"/category/travel/\\"
+            ],
+            [
+              \\"Japan\\",
+              \\"/tag/japan/\\"
+            ],
+            [
+              \\"About Us\\",
+              \\"/about-us/\\"
+            ]
+          ],
+          \\"featured\\": {
+            \\"showOnList\\": false,
+            \\"showOnPost\\": false
+          }
+        }
+      }
+    },
+    {
+      \\"name\\": \\"@sileajs/wp-source\\",
+      \\"state\\": {
+        \\"source\\": {
+          \\"api\\": \\"https://test.sileajs.com/wp-json\\"
+        }
+      }
+    },
+    \\"@sileajs/tiny-router\\",
+    \\"@sileajs/html2react\\"
+  ]
+}",
+  ],
+]
+`;
+
+exports[`createPackageJson for create-package works with a theme like "@sileajs/mars-theme" 1`] = `
+Array [
+  Array [
+    "silea",
+  ],
+]
+`;
+
+exports[`createPackageJson for create-package works with a theme like "@sileajs/mars-theme" 2`] = `
+Array [
+  Array [
+    "@sileajs/mars-theme//path/to/project/package.json",
+    "{
+  \\"name\\": \\"random-name\\",
+  \\"version\\": \\"1.0.0\\",
+  \\"description\\": \\"Silea package created using the Silea CLI.\\",
+  \\"keywords\\": [
+    \\"silea\\",
+    \\"silea-test\\"
+  ],
+  \\"license\\": \\"Apache-2.0\\",
+  \\"dependencies\\": {
+    \\"silea\\": \\"^1.0.0\\"
+  }
+}
+",
+  ],
+]
+`;
+
+exports[`createPackageJson for create-package works with a theme like "random-theme" 1`] = `
+Array [
+  Array [
+    "silea",
+  ],
+]
+`;
+
+exports[`createPackageJson for create-package works with a theme like "random-theme" 2`] = `
+Array [
+  Array [
+    "random-theme//path/to/project/package.json",
+    "{
+  \\"name\\": \\"random-name\\",
+  \\"version\\": \\"1.0.0\\",
+  \\"description\\": \\"Silea package created using the Silea CLI.\\",
+  \\"keywords\\": [
+    \\"silea\\",
+    \\"silea-test\\"
+  ],
+  \\"license\\": \\"Apache-2.0\\",
+  \\"dependencies\\": {
+    \\"silea\\": \\"^1.0.0\\"
+  }
+}
+",
+  ],
+]
+`;
+
+exports[`createPackageJson works with a theme like "@sileajs/mars-theme" 1`] = `
+Array [
+  Array [
+    "silea",
+  ],
+  Array [
+    "@sileajs/core",
+  ],
+  Array [
+    "@sileajs/wp-source",
+  ],
+  Array [
+    "@sileajs/tiny-router",
+  ],
+  Array [
+    "@sileajs/html2react",
+  ],
+]
+`;
+
+exports[`createPackageJson works with a theme like "@sileajs/mars-theme" 2`] = `
+Array [
+  Array [
+    "/path/to/project/package.json",
+    "{
+  \\"name\\": \\"random-name\\",
+  \\"version\\": \\"1.0.0\\",
+  \\"private\\": true,
+  \\"description\\": \\"Silea project\\",
+  \\"keywords\\": [
+    \\"silea\\"
+  ],
+  \\"scripts\\": {
+    \\"dev\\": \\"silea dev\\",
+    \\"build\\": \\"silea build\\",
+    \\"serve\\": \\"silea serve\\"
+  },
+  \\"dependencies\\": {
+    \\"silea\\": \\"^1.0.0\\",
+    \\"@sileajs/core\\": \\"^1.0.0\\",
+    \\"@sileajs/wp-source\\": \\"^1.0.0\\",
+    \\"@sileajs/tiny-router\\": \\"^1.0.0\\",
+    \\"@sileajs/html2react\\": \\"^1.0.0\\",
+    \\"@sileajs/mars-theme\\": \\"./packages/mars-theme\\"
+  }
+}
+",
+  ],
+]
+`;
+
+exports[`createPackageJson works with a theme like "mars-theme" 1`] = `
+Array [
+  Array [
+    "silea",
+  ],
+  Array [
+    "@sileajs/core",
+  ],
+  Array [
+    "@sileajs/wp-source",
+  ],
+  Array [
+    "@sileajs/tiny-router",
+  ],
+  Array [
+    "@sileajs/html2react",
+  ],
+]
+`;
+
+exports[`createPackageJson works with a theme like "mars-theme" 2`] = `
+Array [
+  Array [
+    "/path/to/project/package.json",
+    "{
+  \\"name\\": \\"random-name\\",
+  \\"version\\": \\"1.0.0\\",
+  \\"private\\": true,
+  \\"description\\": \\"Silea project\\",
+  \\"keywords\\": [
+    \\"silea\\"
+  ],
+  \\"scripts\\": {
+    \\"dev\\": \\"silea dev\\",
+    \\"build\\": \\"silea build\\",
+    \\"serve\\": \\"silea serve\\"
+  },
+  \\"dependencies\\": {
+    \\"silea\\": \\"^1.0.0\\",
+    \\"@sileajs/core\\": \\"^1.0.0\\",
+    \\"@sileajs/wp-source\\": \\"^1.0.0\\",
+    \\"@sileajs/tiny-router\\": \\"^1.0.0\\",
+    \\"@sileajs/html2react\\": \\"^1.0.0\\",
+    \\"random-theme\\": \\"./packages/random-theme\\"
+  }
+}
+",
+  ],
+]
+`;
+
+exports[`downloadFavicon works as expected 1`] = `
+Array [
+  Array [
+    "https://favicon.sileajs.com/",
+  ],
+]
+`;
+
+exports[`downloadFavicon works as expected 2`] = `
+Array [
+  Array [
+    "/path/to/project/favicon.ico",
+  ],
+]
+`;
+
+exports[`ensureProjectDir works when passing a non existent path 1`] = `
+Array [
+  Array [
+    "/path/to/project",
+  ],
+]
+`;
+
+exports[`ensureProjectDir works when passing a non existent path 2`] = `
+Array [
+  Array [
+    "/path/to/project",
+  ],
+]
+`;
+
+exports[`ensureProjectDir works when passing an existent path with an empty repo 1`] = `
+Array [
+  Array [
+    "/path/to/project",
+  ],
+]
+`;
+
+exports[`ensureProjectDir works when passing an existent path with an empty repo 2`] = `
+Array [
+  Array [
+    "/path/to/project",
+  ],
+]
+`;
+
+exports[`installDependencies works as expected 1`] = `
+Array [
+  Array [
+    "npm install",
+    Object {
+      "cwd": "/path/to/project",
+    },
+    [Function],
+  ],
+]
+`;
+
+exports[`revertProgress works if the project directory didn't exist 1`] = `
+Array [
+  Array [
+    "/path/to/project",
+  ],
+]
+`;
+
+exports[`revertProgress works if the project directory existed 1`] = `
+Array [
+  Array [
+    "/path/to/project",
+  ],
+]
+`;
+
+exports[`revertProgress works if the project directory existed 2`] = `
+Array [
+  Array [
+    "/path/to/project/silea.settings.js",
+  ],
+  Array [
+    "/path/to/project/package.json",
+  ],
+  Array [
+    "/path/to/project/packages",
+  ],
+  Array [
+    "/path/to/project/favicon.ico",
+  ],
+  Array [
+    "/path/to/project/node_modules",
+  ],
+  Array [
+    "/path/to/project/package-lock.json",
+  ],
+]
+`;

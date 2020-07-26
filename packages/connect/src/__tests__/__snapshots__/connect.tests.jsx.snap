@@ -3,15 +3,15 @@
 exports[`connect should inject props if \`options\` object is empty 1`] = `
 Array [
   <div>
-    hasState: 
+    hasState:
     true
   </div>,
   <div>
-    hasActions: 
+    hasActions:
     true
   </div>,
   <div>
-    hasLibraries: 
+    hasLibraries:
     true
   </div>,
 ]
@@ -20,15 +20,15 @@ Array [
 exports[`connect should not inject props if \`injectProps\` option is \`false\` 1`] = `
 Array [
   <div>
-    hasState: 
+    hasState:
     false
   </div>,
   <div>
-    hasActions: 
+    hasActions:
     false
   </div>,
   <div>
-    hasLibraries: 
+    hasLibraries:
     false
   </div>,
 ]

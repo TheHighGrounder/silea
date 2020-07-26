@@ -1,11 +1,11 @@
 [
-  {
-    "path": "/*",
-    "resourceSizes": [
-      {
-        "resourceType": "script",
-        "budget": 200
-      }
-    ]
-  }
+	{
+		"path": "/*",
+		"resourceSizes": [
+			{
+				"resourceType": "script",
+				"budget": 200
+			}
+		]
+	}
 ]
