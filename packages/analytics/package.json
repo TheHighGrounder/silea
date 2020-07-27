@@ -1,6 +1,6 @@
 {
 	"name": "@sileajs/analytics",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "Base types and actions to build analytics packages for Silea",
 	"main": "src/index.ts",
 	"keywords": [
@@ -22,8 +22,8 @@
 		"test:inspect": "node --inspect ../../node_modules/.bin/jest --watch --no-cache --runInBand"
 	},
 	"dependencies": {
-		"@sileajs/source": "0.0.0",
-		"@sileajs/router": "0.0.0",
-		"silea": "0.0.0"
+		"@sileajs/router": "^0.0.1",
+		"@sileajs/source": "^0.0.1",
+		"silea": "^0.0.1"
 	}
 }

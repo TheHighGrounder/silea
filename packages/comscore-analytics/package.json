@@ -1,6 +1,6 @@
 {
 	"name": "@sileajs/comscore-analytics",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "Comscore Analytics package for Silea",
 	"homepage": "https://github.com/sileajs/silea",
 	"license": "SEE LICENSE IN LICENSE",
@@ -22,8 +22,8 @@
 		"url": "https://github.com/sileajs/silea/issues"
 	},
 	"dependencies": {
-		"@sileajs/analytics": "0.0.0",
-		"silea": "0.0.0"
+		"@sileajs/analytics": "^0.0.1",
+		"silea": "^0.0.1"
 	},
 	"devDependencies": {
 		"react-helmet-async": "1.0.6",

@@ -1,6 +1,6 @@
 {
 	"name": "@sileajs/types",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "Types for the different Silea APIs",
 	"main": "src/index.ts",
 	"keywords": [
@@ -22,7 +22,7 @@
 		"test": "../../node_modules/.bin/jest --clearCache && ../../node_modules/.bin/jest"
 	},
 	"dependencies": {
-		"ts-essentials": "7.0.0",
-		"@types/koa": "2.11.3"
+		"@types/koa": "2.11.3",
+		"ts-essentials": "7.0.0"
 	}
 }

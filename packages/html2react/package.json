@@ -1,6 +1,6 @@
 {
 	"name": "@sileajs/html2react",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "HTML to React converter for Silea",
 	"keywords": [
 		"silea",
@@ -21,14 +21,14 @@
 		"test:inspect": "node --inspect ../../node_modules/.bin/jest --watch --no-cache --runInBand"
 	},
 	"devDependencies": {
-		"@sileajs/connect": "0.0.0",
-		"@types/react-test-renderer": "16.9.2",
+		"@sileajs/connect": "^0.0.1",
 		"@testing-library/react": "10.4.7",
+		"@types/react-test-renderer": "16.9.2",
 		"react-test-renderer": "16.13.1"
 	},
 	"dependencies": {
-		"@sileajs/components": "0.0.0",
-		"silea": "0.0.0",
-		"himalaya": "1.1.0"
+		"@sileajs/components": "^0.0.1",
+		"himalaya": "1.1.0",
+		"silea": "^0.0.1"
 	}
 }

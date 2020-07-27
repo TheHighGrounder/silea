@@ -1,10 +1,10 @@
 {
 	"name": "e2e-html2react",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"private": true,
 	"description": "Package to do e2e testing of Silea's Html2React package",
 	"dependencies": {
-		"silea": "0.0.0",
-		"@sileajs/html2react": "0.0.0"
+		"@sileajs/html2react": "^0.0.1",
+		"silea": "^0.0.1"
 	}
 }

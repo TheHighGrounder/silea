@@ -1,6 +1,6 @@
 {
 	"name": "@sileajs/mars-theme",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "A starter theme for Silea",
 	"keywords": [
 		"silea",
@@ -16,8 +16,8 @@
 		"url": "https://community.sileajs.com"
 	},
 	"dependencies": {
-		"@sileajs/components": "0.0.0",
-		"@sileajs/html2react": "0.0.0",
-		"silea": "0.0.0"
+		"@sileajs/components": "^0.0.1",
+		"@sileajs/html2react": "^0.0.1",
+		"silea": "^0.0.1"
 	}
 }

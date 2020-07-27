@@ -1,6 +1,6 @@
 {
 	"name": "@sileajs/type-declarations",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "Types declarations for the different Silea APIs",
 	"main": "index.js",
 	"types": "index.d.ts",

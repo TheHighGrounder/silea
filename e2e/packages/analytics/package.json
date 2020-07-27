@@ -1,12 +1,12 @@
 {
 	"name": "e2e-analytics",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"private": true,
 	"description": "Package to do e2e testing of Silea's analytics library",
 	"dependencies": {
-		"@sileajs/analytics": "0.0.0",
-		"@sileajs/source": "0.0.0",
-		"@sileajs/router": "0.0.0",
-		"silea": "0.0.0"
+		"@sileajs/analytics": "^0.0.1",
+		"@sileajs/router": "^0.0.1",
+		"@sileajs/source": "^0.0.1",
+		"silea": "^0.0.1"
 	}
 }

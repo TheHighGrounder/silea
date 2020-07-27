@@ -1,6 +1,6 @@
 {
 	"name": "silea",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "Silea cli and entry point to other packages",
 	"keywords": [
 		"silea",
@@ -37,10 +37,10 @@
 	"dependencies": {
 		"@emotion/core": "10.0.28",
 		"@emotion/styled": "10.0.27",
-		"@sileajs/error": "0.0.0",
-		"@sileajs/type-declarations": "0.0.0",
-		"@sileajs/types": "0.0.0",
 		"@loadable/component": "5.13.1",
+		"@sileajs/error": "^0.0.1",
+		"@sileajs/type-declarations": "^0.0.1",
+		"@sileajs/types": "^0.0.1",
 		"chalk": "4.1.0",
 		"clipboardy": "2.3.0",
 		"commander": "6.0.0",
@@ -62,8 +62,8 @@
 		"typescript": "3.9.7"
 	},
 	"devDependencies": {
-		"@sileajs/connect": "0.0.0",
-		"@sileajs/core": "0.0.0",
+		"@sileajs/connect": "^0.0.1",
+		"@sileajs/core": "^0.0.1",
 		"@types/didyoumean": "1.2.0",
 		"@types/fs-extra": "9.0.1",
 		"@types/inquirer": "7.3.0",

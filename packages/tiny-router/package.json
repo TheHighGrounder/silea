@@ -1,6 +1,6 @@
 {
 	"name": "@sileajs/tiny-router",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "A tiny router for Silea projects",
 	"homepage": "https://github.com/sileajs/silea",
 	"license": "SEE LICENSE IN LICENSE",
@@ -21,8 +21,8 @@
 		"url": "https://github.com/sileajs/silea/issues"
 	},
 	"dependencies": {
-		"@sileajs/router": "0.0.0",
-		"@sileajs/source": "0.0.0",
-		"silea": "0.0.0"
+		"@sileajs/router": "^0.0.1",
+		"@sileajs/source": "^0.0.1",
+		"silea": "^0.0.1"
 	}
 }

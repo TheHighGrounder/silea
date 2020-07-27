@@ -1,6 +1,6 @@
 {
 	"name": "@sileajs/wp-source",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "A Silea source package for the REST API of self-hosted and WordPress.com sites",
 	"homepage": "https://github.com/sileajs/silea",
 	"license": "SEE LICENSE IN LICENSE",
@@ -21,14 +21,14 @@
 		"url": "https://github.com/sileajs/silea/issues"
 	},
 	"dependencies": {
-		"@sileajs/source": "0.0.0",
-		"silea": "0.0.0",
+		"@sileajs/source": "^0.0.1",
 		"normalizr": "3.6.0",
 		"path-to-regexp": "6.1.0",
-		"query-string": "6.13.1"
+		"query-string": "6.13.1",
+		"silea": "^0.0.1"
 	},
 	"devDependencies": {
-		"@sileajs/connect": "0.0.0",
+		"@sileajs/connect": "^0.0.1",
 		"clone-deep": "4.0.1",
 		"node-fetch": "2.6.0"
 	}

@@ -1,10 +1,10 @@
 {
 	"name": "e2e-tiny-router",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"private": true,
 	"description": "Package to do e2e testing of Silea's tiny-router",
 	"dependencies": {
-		"silea": "0.0.0",
-		"@sileajs/tiny-router": "0.0.0"
+		"@sileajs/tiny-router": "^0.0.1",
+		"silea": "^0.0.1"
 	}
 }

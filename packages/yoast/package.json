@@ -1,5 +1,5 @@
 {
 	"name": "@sileajs/yoast",
 	"description": "This package has been deprecated. Please use @sileajs/head-tags instead.",
-	"version": "0.0.0"
+	"version": "0.0.1"
 }

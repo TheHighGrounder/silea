@@ -1,9 +1,9 @@
 {
 	"name": "e2e-slot-and-fill",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"private": true,
 	"description": "Package to do e2e testing of Silea's Slot and Fill tools",
 	"dependencies": {
-		"silea": "0.0.0"
+		"silea": "^0.0.1"
 	}
 }
