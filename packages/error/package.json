@@ -1,6 +1,6 @@
 {
 	"name": "@sileajs/error",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Silea errors and warnings",
 	"keywords": [
 		"silea"

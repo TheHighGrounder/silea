@@ -1,6 +1,6 @@
 {
 	"name": "create-silea",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Silea package to use npm init instead of npx",
 	"keywords": [
 		"silea"
@@ -22,7 +22,7 @@
 		"start": "node src/index.js"
 	},
 	"dependencies": {
-		"silea": "0.0.1"
+		"silea": "^0.0.2"
 	},
 	"publishConfig": {
 		"access": "public"

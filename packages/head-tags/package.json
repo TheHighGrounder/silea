@@ -1,6 +1,6 @@
 {
 	"name": "@sileajs/head-tags",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Integrate your Silea site with REST API - Head Tags by Silea",
 	"homepage": "https://github.com/SileaJS/silea",
 	"license": "SEE LICENSE IN LICENSE",
@@ -24,13 +24,13 @@
 		"url": "https://github.com/SileaJS/silea/issues"
 	},
 	"dependencies": {
-		"@sileajs/router": "0.0.1",
-		"@sileajs/source": "0.0.1",
-		"silea": "0.0.1"
+		"@sileajs/router": "^0.0.2",
+		"@sileajs/source": "^0.0.2",
+		"silea": "^0.0.2"
 	},
 	"devDependencies": {
-		"@sileajs/connect": "0.0.1",
-		"@sileajs/wp-source": "0.0.1"
+		"@sileajs/connect": "^0.0.2",
+		"@sileajs/wp-source": "^0.0.2"
 	},
 	"publishConfig": {
 		"access": "public"

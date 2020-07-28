@@ -1,6 +1,6 @@
 {
 	"name": "@sileajs/hooks",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Collection of React hooks for Silea",
 	"keywords": [
 		"silea",

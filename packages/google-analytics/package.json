@@ -1,6 +1,6 @@
 {
 	"name": "@sileajs/google-analytics",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Analytics package to use Google Analytics with Silea",
 	"homepage": "https://github.com/SileaJS/silea",
 	"license": "SEE LICENSE IN LICENSE",
@@ -22,8 +22,8 @@
 		"url": "https://github.com/SileaJS/silea/issues"
 	},
 	"dependencies": {
-		"@sileajs/analytics": "0.0.1",
-		"silea": "0.0.1"
+		"@sileajs/analytics": "^0.0.2",
+		"silea": "^0.0.2"
 	},
 	"devDependencies": {
 		"@types/react-test-renderer": "16.9.2",
