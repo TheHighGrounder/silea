@@ -21,10 +21,7 @@ export const errorLogger = (error: Error, message?: string) => {
 		chalk.bold.red("\nError: ") +
 			chalk.red(error.message) +
 			"\n\n" +
-			(message || "") +
-			`If you need help please visit ${chalk.underline.magenta(
-				"https://community.sileajs.com/"
-			)}.\n`
+			(message || "")
 	);
 	process.exit(1);
 };

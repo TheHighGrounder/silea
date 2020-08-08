@@ -10,9 +10,7 @@ export default async ({ packages }) => {
 		// Hydrate Connect state.
 		const stateElement = document.getElementById("__SILEA_CONNECT_STATE__");
 		if (!stateElement) {
-			console.warn(
-				"State for Silea Connect hydratation not found. If you need help please visit https://community.sileajs.com."
-			);
+			console.warn("State for Silea Connect hydratation not found.");
 		} else {
 			// Get a merged object with roots, fills, state, actions...
 			const store = createStore({
@@ -61,7 +59,7 @@ export default async ({ packages }) => {
 		}
 	} else {
 		console.warn(
-			"Silea scripts not loaded because Proxy is not supported in this browser. If you need help please visit https://community.sileajs.com."
+			"Silea scripts not loaded because Proxy is not supported in this browser."
 		);
 	}
 };

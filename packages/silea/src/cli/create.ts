@@ -131,8 +131,6 @@ export default async ({
 				`cd ${options.name} && npx silea dev`
 			)} and have fun! 🎉\n\nYou can find docs at ${chalk.underline.magenta(
 				"https://docs.sileajs.com/"
-			)}.\nFor technical support and assistance please join our community at ${chalk.underline.magenta(
-				"https://community.sileajs.com/"
 			)}.\n`
 		);
 	} catch (error) {

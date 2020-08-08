@@ -1,5 +1,5 @@
 {
-	"name": "e2e-slot-and-fill",
+	"name": "@sileajs/e2e-slot-and-fill",
 	"version": "0.0.1",
 	"description": "Package to do e2e testing of Silea's Slot and Fill tools",
 	"dependencies": {

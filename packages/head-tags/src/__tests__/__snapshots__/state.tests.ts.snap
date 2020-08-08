@@ -211,10 +211,7 @@ Array [
 exports[`state.headTags.get() (post entity) shows a warning message if \`state.silea.url\` is not defined 1`] = `
 Array [
   Array [
-    "Property \`state.headTags.links.transform\` is defined but \`state.silea.url\` is not. All links in <head> tags pointing to other site (e.g. WordPress) instead to the Silea site won't be changed.
-
-If you have any questions, join our community at https://community.sileajs.com/.
-",
+    "Property \`state.headTags.links.transform\` is defined but \`state.silea.url\` is not. All links in <head> tags pointing to other site (e.g. WordPress) instead to the Silea site won't be changed.",
   ],
 ]
 `;
@@ -238,10 +235,7 @@ Array [
       }
     }
   ]
-}
-
-If you have any questions, join our community at https://community.sileajs.com/.
-",
+}",
   ],
 ]
 `;

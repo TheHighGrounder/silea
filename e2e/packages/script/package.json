@@ -1,5 +1,5 @@
 {
-	"name": "e2e-script",
+	"name": "@sileajs/e2e-script",
 	"version": "0.0.1",
 	"description": "Package to do e2e testing of Silea's Script component",
 	"dependencies": {

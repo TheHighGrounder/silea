@@ -1,5 +1,5 @@
 {
-	"name": "e2e-tiny-router",
+	"name": "@sileajs/e2e-tiny-router",
 	"version": "0.0.1",
 	"description": "Package to do e2e testing of Silea's tiny-router",
 	"dependencies": {

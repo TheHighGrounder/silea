@@ -1,5 +1,5 @@
 {
-	"name": "e2e-use-in-view",
+	"name": "@sileajs/e2e-use-in-view",
 	"version": "0.0.1",
 	"description": "Package to do e2e testing of Silea's useInView hook",
 	"dependencies": {

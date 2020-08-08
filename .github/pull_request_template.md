@@ -48,8 +48,6 @@ merge of your pull request!
 -   [ ] Update starter themes
 -   [ ] Update other packages
 -   [ ] Open an issue for this feature in the [docs repo](https://github.com/SileaJS/docs/wiki/Code-Releases)
--   [ ] Update community discussions
--   [ ] Add a changeset (with link to its [Feature Discussion](https://community.sileajs.com/c/33) if it exists)
 
 <!-- Changesets are necessary if your changes should release any packages.
 Run `npx changeset` to create a changeset.

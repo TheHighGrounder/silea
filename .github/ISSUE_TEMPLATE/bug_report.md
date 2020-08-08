@@ -10,7 +10,6 @@ about: I think something is not working as it should
 -   I've updated both my project and my packages to the latest Silea versions: https://docs.sileajs.com/guides/keep-silea-updated
 -   I've searched for existing issues.
 -   I've checked the documentation: https://docs.sileajs.com
--   I've checked the community forum: https://community.sileajs.com
 
 **Expected behavior**
 

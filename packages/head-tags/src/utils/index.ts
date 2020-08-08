@@ -8,10 +8,7 @@ import {
 } from "../../types";
 
 // Return a string inviting to ask questions in the community.
-const msg = (text: string) => `${text}
-
-If you have any questions, join our community at https://community.sileajs.com/.
-`;
+const msg = (text: string) => `${text}`;
 
 // Attributes that could contain links.
 const possibleLink = ["href", "content"];

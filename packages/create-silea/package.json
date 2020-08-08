@@ -15,14 +15,11 @@
 		"type": "git",
 		"url": "https://github.com/SileaJS/silea.git"
 	},
-	"bugs": {
-		"url": "https://community.sileajs.com"
-	},
 	"scripts": {
 		"start": "node src/index.js"
 	},
 	"dependencies": {
-		"silea": "^0.0.2"
+		"silea": "0.0.2"
 	},
 	"publishConfig": {
 		"access": "public"

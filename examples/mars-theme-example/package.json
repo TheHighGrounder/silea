@@ -1,5 +1,5 @@
 {
-	"name": "example-mars-theme",
+	"name": "@sileajs/example-mars-theme",
 	"version": "0.0.1",
 	"description": "Example of a project using mars-theme.",
 	"scripts": {
@@ -22,7 +22,7 @@
 		"@sileajs/mars-theme": "0.0.1",
 		"@sileajs/tiny-router": "0.0.1",
 		"@sileajs/wp-source": "0.0.1",
-		"babel-plugin-silea": "0.0.1",
+		"@sileajs/babel-plugin-silea": "0.0.1",
 		"silea": "0.0.1"
 	}
 }

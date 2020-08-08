@@ -1,5 +1,5 @@
 {
-	"name": "babel-plugin-silea",
+	"name": "@sileajs/babel-plugin-silea",
 	"version": "0.0.2",
 	"description": "Babel Plugin for Silea",
 	"keywords": [
@@ -12,9 +12,6 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/SileaJS/silea.git"
-	},
-	"bugs": {
-		"url": "https://community.sileajs.com"
 	},
 	"scripts": {
 		"test:ci": "../../node_modules/.bin/jest --ci --coverage",

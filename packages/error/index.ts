@@ -1,5 +1,3 @@
-const suffix = "\nVisit https://community.sileajs.com for help! 🙂\n";
-
 /**
  * The options for the {@link error} function.
  */
@@ -30,8 +28,8 @@ interface ErrorOptions {
 export const error = (message: string, options: ErrorOptions = {}): void => {
 	const doThrow = typeof options.throw !== "undefined" ? options.throw : true;
 	if (process.env.NODE_ENV !== "production") {
-		if (doThrow) throw new Error(message + suffix);
-		console.error(message + suffix);
+		if (doThrow) throw new Error(message);
+		console.error(message);
 	} else {
 		if (doThrow) throw new Error(message);
 		console.error(message);
@@ -49,6 +47,6 @@ export const error = (message: string, options: ErrorOptions = {}): void => {
  */
 export const warn = (message: string) => {
 	if (process.env.NODE_ENV !== "production") {
-		console.warn(message + suffix);
+		console.warn(message);
 	}
 };

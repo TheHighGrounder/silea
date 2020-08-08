@@ -28,7 +28,7 @@
 		"ramda": "0.27.0"
 	},
 	"devDependencies": {
-		"@sileajs/types": "^0.0.2",
+		"@sileajs/types": "0.0.2",
 		"@types/ramda": "0.27.11"
 	},
 	"publishConfig": {

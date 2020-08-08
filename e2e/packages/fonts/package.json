@@ -1,5 +1,5 @@
 {
-	"name": "e2e-fonts",
+	"name": "@sileajs/e2e-fonts",
 	"version": "0.0.1",
 	"description": "Package to do e2e testing for fonts",
 	"dependencies": {

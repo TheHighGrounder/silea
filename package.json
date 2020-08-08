@@ -1,5 +1,5 @@
 {
-	"name": "silea-monorepo",
+	"name": "@sileajs/silea-monorepo",
 	"private": true,
 	"scripts": {
 		"test": "lerna run test:ci --stream",

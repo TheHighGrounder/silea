@@ -11,9 +11,6 @@
 		"type": "git",
 		"url": "https://github.com/SileaJS/silea.git"
 	},
-	"bugs": {
-		"url": "https://community.sileajs.com"
-	},
 	"scripts": {
 		"test:ci": "../../node_modules/.bin/jest --ci --coverage",
 		"test": "../../node_modules/.bin/jest --watch",
@@ -24,8 +21,8 @@
 		"react-test-renderer": "16.13.1"
 	},
 	"dependencies": {
-		"@sileajs/hooks": "^0.0.2",
-		"silea": "^0.0.2"
+		"@sileajs/hooks": "0.0.2",
+		"silea": "0.0.2"
 	},
 	"publishConfig": {
 		"access": "public"

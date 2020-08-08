@@ -12,24 +12,21 @@
 		"type": "git",
 		"url": "https://github.com/SileaJS/silea.git"
 	},
-	"bugs": {
-		"url": "https://community.sileajs.com"
-	},
 	"scripts": {
 		"test:ci": "../../node_modules/.bin/jest --ci --coverage",
 		"test": "../../node_modules/.bin/jest --watch",
 		"test:inspect": "node --inspect ../../node_modules/.bin/jest --watch --no-cache --runInBand"
 	},
 	"devDependencies": {
-		"@sileajs/connect": "^0.0.2",
+		"@sileajs/connect": "0.0.2",
 		"@testing-library/react": "10.4.7",
 		"@types/react-test-renderer": "16.9.2",
 		"react-test-renderer": "16.13.1"
 	},
 	"dependencies": {
-		"@sileajs/components": "^0.0.2",
+		"@sileajs/components": "0.0.2",
 		"himalaya": "1.1.0",
-		"silea": "^0.0.2"
+		"silea": "0.0.2"
 	},
 	"publishConfig": {
 		"access": "public"

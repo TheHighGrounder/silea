@@ -24,13 +24,13 @@
 		"url": "https://github.com/SileaJS/silea/issues"
 	},
 	"dependencies": {
-		"@sileajs/router": "^0.0.2",
-		"@sileajs/source": "^0.0.2",
-		"silea": "^0.0.2"
+		"@sileajs/router": "0.0.2",
+		"@sileajs/source": "0.0.2",
+		"silea": "0.0.2"
 	},
 	"devDependencies": {
-		"@sileajs/connect": "^0.0.2",
-		"@sileajs/wp-source": "^0.0.2"
+		"@sileajs/connect": "0.0.2",
+		"@sileajs/wp-source": "0.0.2"
 	},
 	"publishConfig": {
 		"access": "public"

@@ -1,5 +1,5 @@
 {
-	"name": "e2e-analytics",
+	"name": "@sileajs/e2e-analytics",
 	"version": "0.0.1",
 	"description": "Package to do e2e testing of Silea's analytics library",
 	"dependencies": {

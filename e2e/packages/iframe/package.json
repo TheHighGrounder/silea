@@ -1,5 +1,5 @@
 {
-	"name": "e2e-iframe",
+	"name": "@sileajs/e2e-iframe",
 	"version": "0.0.1",
 	"description": "Package to do e2e testing of Silea's Iframe component",
 	"dependencies": {

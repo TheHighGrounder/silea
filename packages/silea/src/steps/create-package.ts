@@ -38,7 +38,7 @@ export const createPackageJson = async (
   ],
   "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
-    "silea": "^${sileaVersion}"
+    "silea": "${sileaVersion}"
   }
 }${EOL}`;
 	await writeFile(filePath, fileData);

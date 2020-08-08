@@ -15,16 +15,13 @@
 		"type": "git",
 		"url": "https://github.com/SileaJS/silea.git"
 	},
-	"bugs": {
-		"url": "https://community.sileajs.com"
-	},
 	"scripts": {
 		"test:ci": "../../node_modules/.bin/jest --ci --coverage",
 		"test": "../../node_modules/.bin/jest --watch",
 		"test:inspect": "node --inspect ../../node_modules/.bin/jest --watch --no-cache --runInBand"
 	},
 	"dependencies": {
-		"@sileajs/error": "^0.0.2"
+		"@sileajs/error": "0.0.2"
 	},
 	"devDependencies": {
 		"react-test-renderer": "16.13.1"

@@ -10,13 +10,7 @@ const description404 = (
 	</>
 );
 
-const description = (
-	<>
-		Don&apos;t panic! Seems like you encountered an error. If this persists,
-		<a href="https://community.sileajs.com"> let us know </a> or try
-		refreshing your browser.
-	</>
-);
+const description = <>Don&apos;t panic! Seems like you encountered an error.</>;
 
 // The 404 page component
 const Page404 = ({ state }) => {

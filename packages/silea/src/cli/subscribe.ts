@@ -30,8 +30,7 @@ export default async ({ email }: { email: string }) => {
 		errorLogger(error);
 	}
 
-	console.log(`${chalk.bold("\nThanks for subscribing to our newsletter!")}
-      \nIf you have any doubts, join our community at ${chalk.underline.magenta(
-			"https://community.sileajs.com/"
-		)}.\n`);
+	console.log(
+		`${chalk.bold("\nThanks for subscribing to our newsletter!")}\n`
+	);
 };

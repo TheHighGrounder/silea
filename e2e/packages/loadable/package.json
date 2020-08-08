@@ -1,5 +1,5 @@
 {
-	"name": "e2e-loadable",
+	"name": "@sileajs/e2e-loadable",
 	"version": "0.0.1",
 	"description": "Package to do e2e testing of Silea's loadable utility",
 	"dependencies": {

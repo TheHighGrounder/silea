@@ -13,7 +13,6 @@
   <a href="https://docs.sileajs.com/getting-started?utm_source=github-readme&utm_medium=get-started-link">Get Started</a> |
   <a href="https://docs.sileajs.com/silea-features">Features</a> |
   <a href="https://docs.sileajs.com/getting-started">Docs</a> |
-  <a href="https://community.sileajs.com/">Community</a> |
   <a href="https://twitter.com/SileaJS">Twitter</a>
 </p>
 
@@ -24,7 +23,7 @@
 > -   [About Silea framework](https://docs.sileajs.com/#about-silea-framework)
 > -   [Learning Silea guide](https://docs.sileajs.com/learning-silea)
 >
-> If you can't wait to see what Silea can do, head over to our [Quick Start Guide](https://docs.sileajs.com/getting-started/quick-start-guide) to get up and running! Once you try it out, please [let us know](https://community.sileajs.com/) how it goes! We'd love to learn more about your experience and how Silea can help your project(s). Bug reports will be also highly appreciated.
+> If you can't wait to see what Silea can do, head over to our [Quick Start Guide](https://docs.sileajs.com/getting-started/quick-start-guide) to get up and running!
 >
 > Silea will continue to be improved during the next months, and new features will be added progressively.
 >
@@ -118,7 +117,6 @@ GitHub is where magic happens, but there are more channels where you can find in
 
 <ul>
   <li>📖 <strong>Docs</strong>: this is the place to learn how to build amazing sites with Silea. <a href="https://docs.sileajs.com/getting-started">Get started!</a></li>
-  <li>:family_man_woman_girl_boy: <strong>Community</strong>: use our forum to share any doubts, feedback and meet great people. This is your place too to share <a href="https://community.sileajs.com/c/dev-talk-questions">how are you planning to use Silea!</a></li>
   <li>🐞 <strong>GitHub</strong>: we use GitHub for bugs and pull requests, doubts are solved at the community forum.</li>
   <li>🗣 <strong>Social media</strong>: a more informal place to interact with Silea users, reach out to us on <a href="https://twitter.com/SileaJS">Twitter.</a></li>
   <li>💌 <strong>Newsletter</strong>: do you want to receive the latest framework updates and news? Subscribe <a href="https://twitter.com/SileaJS">here.</a></li>
@@ -126,16 +124,14 @@ GitHub is where magic happens, but there are more channels where you can find in
 
 # » Get involved 🤗
 
-Do you love WordPress and React? Got questions or feedback? We'd love to hear from you. Come join our [community forum](https://community.sileajs.com)! ❤️
-
-Silea also welcomes contributions. There are many ways to support the project (and get free swag)! If you don't know where to start, this guide might help >> [How to contribute?](https://docs.sileajs.com/contributing/how-to-contribute).
+Silea also welcomes contributions. There are many ways to support the project! If you don't know where to start, this guide might help >> [How to contribute?](https://docs.sileajs.com/contributing/how-to-contribute).
 
 # » Open source
 
-Silea is licensed under the terms of the [Apache 2.0](https://github.com/SileaJS/silea/blob/master/LICENSE) license.
+Silea is licensed under the terms of the [The Hippocratic License 2.1](https://github.com/SileaJS/silea/blob/master/LICENSE) license.
 <br />
 <br />
 
 ---
 
-Do you miss any important information? Check out [our docs](https://docs.sileajs.com/getting-started) or [let us know](https://community.sileajs.com/c/docs-and-tutorials).
+Do you miss any important information? Check out [our docs](https://docs.sileajs.com/getting-started).

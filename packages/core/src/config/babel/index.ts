@@ -58,9 +58,8 @@ export default ({ mode }: { mode: Mode }): BabelConfigs => {
 			"@emotion/babel-preset-css-prop",
 		];
 		const plugins = [
-			//
-			"babel-plugin-silea",
-			// Support for babel macros. See: https://community.sileajs.com/t/tailwindcss-with-babel-macro-plugin-and-css-in-js/1040
+			"@sileajs/babel-plugin-silea",
+			// Support for babel macros.
 			"babel-plugin-macros",
 			// Support for dynamic imports: import("./my-file")
 			"@babel/plugin-syntax-dynamic-import",

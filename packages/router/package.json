@@ -12,15 +12,12 @@
 		"type": "git",
 		"url": "https://github.com/SileaJS/silea.git"
 	},
-	"bugs": {
-		"url": "https://community.sileajs.com"
-	},
 	"scripts": {
 		"test:ci": "../../node_modules/.bin/jest --ci --coverage",
 		"test": "../../node_modules/.bin/jest --clearCache && ../../node_modules/.bin/jest"
 	},
 	"dependencies": {
-		"silea": "^0.0.2"
+		"silea": "0.0.2"
 	},
 	"publishConfig": {
 		"access": "public"

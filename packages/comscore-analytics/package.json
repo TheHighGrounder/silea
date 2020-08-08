@@ -22,8 +22,8 @@
 		"url": "https://github.com/SileaJS/silea/issues"
 	},
 	"dependencies": {
-		"@sileajs/analytics": "^0.0.2",
-		"silea": "^0.0.2"
+		"@sileajs/analytics": "0.0.2",
+		"silea": "0.0.2"
 	},
 	"devDependencies": {
 		"react-helmet-async": "1.0.6",

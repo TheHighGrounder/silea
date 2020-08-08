@@ -5,7 +5,7 @@ Object {
   "es5": Object {
     "compact": true,
     "plugins": Array [
-      "babel-plugin-silea",
+      "@sileajs/babel-plugin-silea",
       "babel-plugin-macros",
       "@babel/plugin-syntax-dynamic-import",
       "@loadable/babel-plugin",

@@ -12,9 +12,6 @@
 		"type": "git",
 		"url": "https://github.com/SileaJS/silea.git"
 	},
-	"bugs": {
-		"url": "https://community.sileajs.com"
-	},
 	"sideEffects": false,
 	"scripts": {
 		"test:ci": "../../node_modules/.bin/jest --passWithNoTests --ci --coverage",

@@ -1,5 +1,5 @@
 {
-	"name": "e2e-emotion",
+	"name": "@sileajs/e2e-emotion",
 	"version": "0.0.1",
 	"description": "Package to do e2e testing of Silea's internal Emotion library",
 	"dependencies": {

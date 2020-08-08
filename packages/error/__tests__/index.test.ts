@@ -7,9 +7,7 @@ beforeEach(() => {
 describe("error", () => {
 	test("In development, throw the full message", () => {
 		expect(() => error("This is wrong")).toThrow(
-			new Error(
-				"This is wrong\nVisit https://community.sileajs.com for help! 🙂\n"
-			)
+			new Error("This is wrong.\n")
 		);
 	});
 
@@ -24,9 +22,7 @@ describe("error", () => {
 		console.error = jest.fn();
 		expect(() => error("This is wrong", { throw: false })).not.toThrow();
 		expect(console.error).toHaveBeenCalledTimes(1);
-		expect(console.error).toHaveBeenLastCalledWith(
-			"This is wrong\nVisit https://community.sileajs.com for help! 🙂\n"
-		);
+		expect(console.error).toHaveBeenLastCalledWith("This is wrong.\n");
 	});
 
 	test("In production, console.error the short message", () => {
@@ -43,9 +39,7 @@ describe("warn", () => {
 		console.warn = jest.fn();
 		warn("This is a warning");
 		expect(console.warn).toHaveBeenCalledTimes(1);
-		expect(console.warn).toHaveBeenLastCalledWith(
-			"This is a warning\nVisit https://community.sileajs.com for help! 🙂\n"
-		);
+		expect(console.warn).toHaveBeenLastCalledWith("This is a warning.\n");
 	});
 
 	test("In production, do not warn", () => {

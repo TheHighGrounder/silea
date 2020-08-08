@@ -2,7 +2,7 @@
 "@sileajs/components": minor
 ---
 
-Introducing [auto prefetching](https://community.sileajs.com/t/auto-prefetch-data/886) to the `<Link />` component.
+Introducing auto prefetching to the `<Link />` component.
 
 There are four supported modes:
 
